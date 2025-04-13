@@ -26,7 +26,7 @@ The Tor Browser anonymizes your web traffic using the Tor network, making it eas
 Arti
 ====
 Arti [#]_ is a project to implement the Tor anonymity protocols in the Rust programming language.
-At the time of writing, the latest Arti release is 1.4.1, which provides a working Tor client. However, more work is needed to make Arti equivalent to the C Tor implementation regarding security. Until Arti is more mature, it should only be used for experimental purposes.
+At the time of writing, the latest Arti release is 1.4.2 [#]_, which provides a working Tor client. However, more work is needed to make Arti equivalent to the C Tor implementation regarding security. Until Arti is more mature, it should only be used for experimental purposes.
 
 The Tor Network
 ===============
@@ -768,6 +768,7 @@ By design, Tor might be prone to deanonymization attacks, and recent events [#]_
 .. [#] https://www.onion-router.net/History.html
 .. [#] https://www.torproject.org/
 .. [#] https://tpo.pages.torproject.net/core/arti/
+.. [#] https://crates.io/crates/arti/versions
 .. [#] The entry guard can also be a bridge, which is a relay not publicly listed in the directory.
 .. [#] https://check.torproject.org/torbulkexitlist
 .. [#] https://tb-manual.torproject.org/onion-services/
