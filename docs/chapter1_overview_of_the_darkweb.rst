@@ -337,13 +337,13 @@ Browsing Tor or I2P over a Virtual Private Network (VPN) in terms of security va
 
 .. epigraph::
 
-   “Using a VPN with Tor is not the obvious security gain that people make it out to be. Users may not lose any safety by adding a VPN, but they certainly aren’t gaining any.”
+   “Using a VPN with Tor is not the obvious security gain that people make it out to be. Users may not lose any safety by adding a VPN, but they certainly aren’t gaining any.” [#]_
 
    -- Matt Traudt
 
 .. epigraph::
    
-   “We don’t talk about it a lot, but VPNs are entirely based on trust. As a consumer, you have no idea which company will best protect your privacy. You don’t know the data protection laws of the Seychelles or Panama. You don’t know which countries can put extra-legal pressure on companies operating within their jurisdiction. You don’t know who actually owns and runs the VPNs. You don’t even know which foreign companies the NSA has targeted for mass surveillance. All you can do is make your best guess, and hope you guessed well.”
+   “We don’t talk about it a lot, but VPNs are entirely based on trust. As a consumer, you have no idea which company will best protect your privacy. You don’t know the data protection laws of the Seychelles or Panama. You don’t know which countries can put extra-legal pressure on companies operating within their jurisdiction. You don’t know who actually owns and runs the VPNs. You don’t even know which foreign companies the NSA has targeted for mass surveillance. All you can do is make your best guess, and hope you guessed well.” [#]_
 
    -- Bruce Schneier
 
@@ -410,6 +410,8 @@ Access to most of the forums on the Dark Web requires a subscription. Never prov
 .. [#] https://wallet.mycelium.com/
 .. [#] https://www.getmonero.org/downloads/#gui
 .. [#] https://featherwallet.org/download/
+.. [#] https://web.archive.org/web/20230609012640/https://blog.pastly.net/posts/2016-11-12-vpn-tor-not-net-gain/
+.. [#] https://www.schneier.com/blog/archives/2021/06/vpns-and-trust.html
 .. [#] https://nakedsecurity.sophos.com/2022/04/06/serious-security-darkweb-drugs-market-hydra-taken-offline-by-german-police/
 .. [#] https://nakedsecurity.sophos.com/2020/07/20/7-vpns-that-leaked-their-logs-the-logs-that-didnt-exist/
 .. [#] https://gist.github.com/joepie91/5a9909939e6ce7d09e29
