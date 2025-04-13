@@ -331,7 +331,7 @@ The Tor browser allows you to browse any website hosted on the Surface Web anony
 If you’re starting with Tor, you may find it convenient to import some prepared bookmarks from OS Int Combined. [#]_
  
 .. figure:: images/image35.png
-   :width: 600
+   :width: 500
    :alt: Bookmarks from OS Int Combined for the Tor Browser
    :class: with-border
 
