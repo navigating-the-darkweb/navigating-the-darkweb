@@ -215,6 +215,13 @@ Dark Web sources of cybercriminal activity (e.g., DNMs, forums) are never perman
 
 For that reason, some market administrators are relying on a technique of regularly updating a file (``canary.txt``) containing a PGP-signed message as proof that they are still alive and in control of the darknet market.
 
+.. figure:: images/image357.png
+   :width: 700
+   :alt: Example of a canary.txt filee
+   :class: with-border
+
+   Example of a canary.txt file (Archetyp Market on Tor).
+
 The graph (extract) below shows that many DNM have a lifetime of less than a year.
  
 .. figure:: images/image14.png
