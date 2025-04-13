@@ -461,7 +461,7 @@ Online games, from old games to gambling websites, are available on almost all d
 	Zero-8 is a Zite (ZeroNet) where you can play many online games.
 
 Paste Services
-==============
+**************
 Services like Pastebin also exist on the Dark Web and may be interesting sources of information if you know what you are looking for and how to use them. Some pastes may contain dumps of stolen data, while others may be source code extracts or links to hidden services.
  
 .. figure:: images/image217.png
