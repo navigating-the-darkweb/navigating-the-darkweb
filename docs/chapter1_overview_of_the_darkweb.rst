@@ -92,7 +92,7 @@ With these scenarios in mind, there are legitimate and ethical use cases for con
 
 Connecting to Darknets
 ======================
-A critical point to understand is that multiple darknets collectively make up the Dark Web, and no single client or software allows you to browse the so-called “Dark Web.” Clients are only developed to access specific darknets. It means you won’t be able to browse eepsites (I2P) with the Tor Browser, and vice-versa. I’ve sometimes read confusing statements that said, “The easiest way to browse the Dark Web is by using Tor Browser.” The Tor Browser allows you to either anonymously browse the Surface Web or Onion Services (the Tor’s darknet), and that’s all. A more appropriate statement would be: “The easiest way to connect to Tor's darknet is by using Tor Browser.” In the same way, run I2P Router or i2pd to browse the I2P’s darknet .
+A critical point to understand is that multiple darknets collectively make up the Dark Web, and no single client or software allows you to browse the so-called “Dark Web.” Clients are only developed to access specific darknets. It means you won’t be able to browse eepsites (I2P) with the Tor Browser, and vice-versa. I’ve sometimes read confusing statements that said, “The easiest way to browse the Dark Web is by using Tor Browser.” The Tor Browser allows you to either anonymously browse the Surface Web or Onion Services (the Tor’s darknet), and that’s all. A more appropriate statement would be: “The easiest way to connect to Tor's darknet is by using Tor Browser.” In the same way, run I2P Router or i2pd to browse the I2P darknet [#]_.
 
 .. note::
 
@@ -383,6 +383,7 @@ Access to most of the forums on the Dark Web requires a subscription. Never prov
 .. [#] https://people.csail.mit.edu/devadas/pubs/riffle.pdf
 .. [#] https://u.is/
 .. [#] https://en.wikipedia.org/wiki/Darknet
+.. [#] To be more accurate, I2PRouter and i2pd are servers that will connect you to the I2P darknet. You’ll then need to configure a local proxy in your browser to browse I2P.
 .. [#]   https://www.bleepingcomputer.com/news/security/tor-and-i2p-networks-hit-by-wave-of-ongoing-ddos-attacks/
 .. [#] http://loulan3dwsl6ycvvszpu5xppnx5a7ajbqz4q3hidkt6t6aquzvaff6qd.onion
 .. [#] https://flare.io/learn/resources/dark0de-2021s-darknet-market-leader/
