@@ -229,7 +229,7 @@ The graph (extract) below shows that many DNM have a lifetime of less than a yea
    :alt: Darknet Market Timeline
    :class: with-border
 
-   Darknet Market Timeline (extract). 
+   Darknet Market Timeline (extract). [#]_
 
 The biggest threat to DNM is law enforcement seizing it. The example below shows the seizure advisory on the Hydra Market.
  
@@ -394,6 +394,7 @@ Access to most of the forums on the Dark Web requires a subscription. Never prov
 .. [#]   https://www.bleepingcomputer.com/news/security/tor-and-i2p-networks-hit-by-wave-of-ongoing-ddos-attacks/
 .. [#] http://loulan3dwsl6ycvvszpu5xppnx5a7ajbqz4q3hidkt6t6aquzvaff6qd.onion
 .. [#] https://flare.io/learn/resources/dark0de-2021s-darknet-market-leader/
+.. [#] Source: https://www.emcdda.europa.eu/publications/posters/2018/darknet-markets-ecosystem_en
 .. [#] https://www.reddit.com/r/darknetvideo/comments/10ytfu2/my_pictorial_interpretation_of_the_darknet_market/
 .. [#] Binance (https://www.binance.com/) or Coinbase (https://www.coinbase.com/) for example.
 .. [#] You can check the distribution of Bitcoin ATMs here: https://coinatmradar.com/.
