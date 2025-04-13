@@ -213,7 +213,7 @@ Lifetime and DNM Seizures
 =========================
 Dark Web sources of cybercriminal activity (e.g., DNMs, forums) are never permanent. They are often shut down by law enforcement or taken offline by administrators to avoid getting caught. For this reason, DNM lifetime is usually short (less than a year on average), and DNMs are sometimes offline for several hours or days for unexplained reasons. Some exceptions exist, and the most enduring DNMs have existed for several years.
 
-For that reason, some market administrators are relying on a technique of regularly updating a file (canary.txt) containing a PGP-signed message as proof that they are still in control of the darknet market.
+For that reason, some market administrators are relying on a technique of regularly updating a file (``canary.txt``) containing a PGP-signed message as proof that they are still alive and in control of the darknet market.
 
 The graph (extract) below shows that many DNM have a lifetime of less than a year.
  
