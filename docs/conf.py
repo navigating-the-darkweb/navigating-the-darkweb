@@ -66,6 +66,12 @@ html_theme_options = {
             "type": "fontawesome"
         },
         {
+            "name": "Reddit",
+            "url": "https://www.reddit.com/r/NavigatingTheDarkWeb/",
+            "icon": "fa-brands fa-reddit",
+            "type": "fontawesome"
+        },
+        {
             "name": "Donate",
             "url": "https://www.paypal.com/donate/?hosted_button_id=WFXYUYZK2Y7DA",
             "icon": "fas fa-donate",
