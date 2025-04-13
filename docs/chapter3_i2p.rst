@@ -439,9 +439,9 @@ Hidden Services Manager
 =======================
 The Hidden Services Manager is the interface for managing your I2P tunnels. The page is broken down into the following sections:
 
-- Global Tunnel Control: Used to create a new tunnel, and start or stop existing tunnels.
-- I2P Hidden Services: Manages your hidden services (create a new hidden service, delete an existing hidden service, modify your hidden services, start or stop your hidden services). Clicking on a service's name will redirect to the configuration window.
-- I2P Client Tunnels: Manages all the client tunnels (e.g., I2P HTTP Proxy for the outproxy configuration, POP3 and SMTP tunnels for the email application, etc.). Clicking on the name of a service will redirect to the configuration window.
+- **Global Tunnel Control**: Used to create a new tunnel, and start or stop existing tunnels.
+- **I2P Hidden Services**: Manages your hidden services (create a new hidden service, delete an existing hidden service, modify your hidden services, start or stop your hidden services). Clicking on a service's name will redirect to the configuration window.
+- **I2P Client Tunnels**: Manages all the client tunnels (e.g., I2P HTTP Proxy for the outproxy configuration, POP3 and SMTP tunnels for the email application, etc.). Clicking on the name of a service will redirect to the configuration window.
  
 .. figure:: images/image85.png
    :width: 800
