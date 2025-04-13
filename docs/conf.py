@@ -72,6 +72,12 @@ html_theme_options = {
             "type": "fontawesome"
         },
         {
+            "name": "Email",
+            "url": "https://spamty.eu/show/v6/11513/QovA91huoP7d2fe196v4migr/",
+            "icon": "fas fa-envelope",
+            "type": "fontawesome"
+        },
+        {
             "name": "Donate",
             "url": "https://www.paypal.com/donate/?hosted_button_id=WFXYUYZK2Y7DA",
             "icon": "fas fa-donate",

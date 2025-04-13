@@ -24,6 +24,8 @@ Sébastien Damaye is a cybersecurity expert with more than 20 years experience. 
 - https://www.aldeid.com/
 - https://deephunter.readthedocs.io
 
+Send the author an `email <https://spamty.eu/show/v6/11513/QovA91huoP7d2fe196v4migr/>`_.
+
 Acknowledgments and Dedication
 ******************************
 This book wouldn't exist without the incredible people who stood by me through every step of the journey.

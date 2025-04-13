@@ -11,7 +11,7 @@ History of I2P
 ==============
 In October 2001, a developer named Lance James (aka 0x90) created the Invisible IRC Project (IIP), an initiative to anonymously and privately talk using IRC. However, this project alone was not a big enough target to face the competition (at this time, Freenet, GNUnet, and Tor), and a more extensive project was created: the InvisibleNet [#]_.
 
-In 2003, a developer named “jrandom” took over the project and decided to rewrite the code in Java. He redesigned the IIP protocol (i.e., the “garlic routing”) and renamed the project the Invisible Internet Project or “I2P”.
+In 2003, a developer named “jrandom” took over the project and decided to rewrite the code in Java. He redesigned the IIP protocol (i.e., the “garlic routing”) and renamed the project “the Invisible Internet Project” or “I2P”.
 
 Router development continued through 2004 and 2005, and several applications (i2ptunnel, SusiMail, and SusiDNS) were added to the I2P package with the help of a few contributors.
 
