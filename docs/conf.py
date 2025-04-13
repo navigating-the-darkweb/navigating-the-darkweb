@@ -17,8 +17,9 @@ author = 'Sébastien Damaye'
 
 
 extensions = [
-    'sphinx_copybutton',
+    'sphinx.ext.autosectionlabel',
     'sphinx_fontawesome',
+    'sphinx_copybutton',
 ]
 
 templates_path = ['_templates']
