@@ -98,12 +98,12 @@ A critical point to understand is that multiple darknets collectively make up th
 
     As explained later in this book, there are ways to access Tor Onion Services directly from the Surface Web without connecting to Tor. However, it is not recommended to use these services as it will jeopardize your anonymity. These services are also responsible for another issue; they expose “hidden content” to search engines, which is not supposed to happen, as Surface Web search engines do not index darknets.
  
-.. figure:: images/image3.png
-   :width: 800
-   :alt: Tor bridges exposing hidden content to search engines
-   :class: with-border
+	.. figure:: images/image3.png
+	   :width: 800
+	   :alt: Tor bridges exposing hidden content to search engines
+	   :class: with-border
 
-   Tor bridges available on the Internet are exposing "hidden content" to search engines.
+	   Tor bridges available on the Internet are exposing "hidden content" to search engines.
 
 Similarities and Differences Between Darknets
 *********************************************
