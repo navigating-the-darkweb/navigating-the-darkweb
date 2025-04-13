@@ -1081,12 +1081,9 @@ The previous sections introduced some of the crawlers available for different da
 	  - 
 	  - 
 	  - 
-	* - Reporting
-	  - :fa:`check`
-	  - 
-	  - 
-	  - 
 
+Reporting
+*********
 Having a clear objective from the very beginning of your project will be key. This will tell you what information needs to be stored in your database and how it should be organized. Below are some possible options. 
 
 - **Alert rules**: You may want to schedule a task that will search for some criteria and alert you in case of a match. This can also be done during the crawling. You may, for example, want to monitor any reference to a list of domains, your company name, email addresses, etc.
