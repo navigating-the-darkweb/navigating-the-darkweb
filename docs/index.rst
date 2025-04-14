@@ -79,6 +79,10 @@ In this book, we use specific text formatting to indicate different types of act
 	        </IfModule>
    * - Command line (inline)
      - You can install Tor from the packages (``sudo apt update && sudo apt install tor``) or download the Tor Browser.
+   * - Command output
+     - The above command will produce a result similar to this:
+
+	   16:72C351A6A2B3346260F62EACE3FF5C2D3FC283726E805141D1977B0C88
 
 Support the Author
 ******************
