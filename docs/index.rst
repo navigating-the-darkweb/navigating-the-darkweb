@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Navigating the Dark Web: A Comprehensive Guide to Darknets, Tools, and Intelligence
-===================================================================================
+Welcome
+=======
 
 What Is It?
 ***********
@@ -12,17 +12,24 @@ What Is It?
 
 Why an Online Book?
 *******************
-I was initially planning to publish this book on Amazon. However the writing process took me almost two years, and I noticed that the content (Dark Web references, tools, versions, etc.) kept being updated very quickly, forcing me to come back to previous chapters and ensure that the content was always up to date. This is when I began to think that an online book would be a better place, especially because each reader could become a contributor (using the ``Suggest edit`` or ``Open issue`` buttons).
+I was initially planning to publish this book on Amazon. However the writing process took me more than two years, and I kept coming back to previous chapters to ensure that the content was always up to date (project names, versions, etc.).
 
-Because all the content is indexed, searching for a particular term is also much easier online.
+I began to think that an online book would be a better place, especially because each reader could become a contributor (using the **Suggest edit** or **Open issue** buttons).
+
+Besides, there are many links, code extracts and command lines that are easier to copy/paste online.
+
+And because all the content is indexed, searching for a particular term is also much easier online.
 
 About the Author
 ****************
-Sébastien Damaye is a cybersecurity expert with more than 20 years experience. He's passionate about  cybersecurity and loves to share his knowledge. Below are some references.
+`Sébastien Damaye <https://www.linkedin.com/in/sebastiendamaye/>`_ is a cybersecurity expert with over 20 years of experience. He is known for his contributions to the field of cybersecurity, particularly in areas related to threat hunting and security tools.
 
-- https://www.linkedin.com/in/sebastiendamaye/
+Main contributions:
+
 - https://www.aldeid.com/
 - https://deephunter.readthedocs.io
+- https://sourceforge.net/projects/pytbull/
+- https://github.com/sebastiendamaye
 
 Send the author an `email <https://spamty.eu/show/v6/11513/QovA91huoP7d2fe196v4migr/>`_.
 
@@ -36,6 +43,43 @@ To my family, thank you for your patience, your love, and your quiet support. Wh
 
 I'd like to dedicate this book to my brother, who died unexpectedly in the middle of writing this book.
 
+Naming conventions
+******************
+In this book, we use specific text formatting to indicate different types of actions. Below are the conventions used:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Action
+     - Example
+   * - Select an option from a menu
+     - In Google Chrome, go to **Settings > Privacy and security > Delete browing data**.
+   * - Click a button or link
+     - To start the installation, click **Next**.
+   * - File names
+     - Edit the ``settings.py`` file as shown below.
+   * - Command line (dedicated block)
+     - You can install Tor from the packages with the below command:
+
+       .. code-block:: bash
+
+            $ sudo apt update && sudo apt install tor
+   * - Code to copy and modify
+     - Add ``127.0.0.1`` in the ``/etc/apache2/ports.conf`` file as shown below:
+
+       .. code-block::
+	        :emphasize-lines: 1,3,6
+	   
+	        Listen 127.0.0.1:80
+	        <IfModule ssl_module>
+		      Listen 127.0.0.1:443
+	        </IfModule>
+	        <IfModule mod_gnutls.c>
+		      Listen 127.0.0.1:443
+	        </IfModule>
+   * - Command line (inline)
+     - You can install Tor from the packages (``sudo apt update && sudo apt install tor``) or download the Tor Browser.
+
 Support the Author
 ******************
 This book is free for everyone to enjoy — no paywalls, no subscriptions, just shared with love. If you’ve found value in it and would like to support my work, you’re welcome to leave a donation.
@@ -46,10 +90,9 @@ Thank you for reading, and for being part of this journey.
 
 `Donate via Paypal <https://www.paypal.com/donate/?hosted_button_id=WFXYUYZK2Y7DA>`_.
 
-Brief Contents
-==============
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
+   :Caption: Contents:
    
    foreword
    chapter1_overview_of_the_darkweb

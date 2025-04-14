@@ -17,7 +17,9 @@ author = 'Sébastien Damaye'
 
 
 extensions = [
-    'sphinx.ext.autosectionlabel',
+    #'sphinx.ext.autosectionlabel',
+    #'sphinx_design',
+    #'sphinx_togglebutton',
     'sphinx_fontawesome',
     'sphinx_copybutton',
 ]
@@ -48,10 +50,13 @@ html_theme_options = {
     "use_source_button": True,
     "use_issues_button": True,
     "use_download_button": False,
-    #"show_toc_level": 4, # secondary navar auto-expands when reading. Can force static num of levels to be shown in secondary navbar
-    #"show_navbar_depth": 1, # level of toc items in the left sidebar to remain expanded. Default=1
+    "use_sidenotes": True, # puts footnotes in the margin instead of at the bottom of the page
+    #"show_navbar_depth": 4, # level of toc items in the left sidebar to remain expanded. Default=1
     #"max_navbar_depth": 4, # level of toc items included in the left sidebar. Default=4
-    #"collapse_navbar": True, # allows (False) the left navbar to be expanded. Default=False
+    #"navigation_depth": 4,
+    #"show_nav_level": 4,
+    #"show_toc_level": 4, # secondary navar auto-expands when reading. Can force static num of levels to be shown in secondary navbar
+    #"collapse_navbar": False, # allows (False) the left navbar to be expanded. Default=False
     "logo": {
         #"image_light": "_static/logo-light.png",
         #"image_dark": "_static/logo-dark.png",
@@ -83,12 +88,7 @@ html_theme_options = {
             "icon": "fas fa-donate",
         },
     ],
-}
-
-"""
-html_sidebars = {
-    "**": ["navbar-logo.html", "icon-links.html", "search-button-field.html", "sbt-sidebar-nav.html"]
-}
-"""
+    "home_page_in_toc": True # include welcome page to navigation bar on the left
+ }
 
 pygments_style = 'sphinx'
