@@ -168,11 +168,11 @@ Whonix [#]_ is a set of two virtual machines (a workstation and a Tor gateway) t
 
 Tor Browser
 -----------
-Alternatively, the Tor browser [#]_ is an all-in-one package with Tor and a pre-configured browser. Note that this won’t be suitable if you need to use the ``ControlPort``.
+Alternatively, the Tor browser [#]_ is an all-in-one package with Tor and a pre-configured browser. Note that this won’t be suitable if you need to use the `ControlPort <#tor-controlport>`_.
 
 Packages
 --------
-You can install the Tor service from the packages for advanced operations (e.g., if you need to use the Tor ``ControlPort`` and have control over the Tor service). For Debian-based distributions, it should be as straightforward as entering the below command:
+You can install the Tor service from the packages for advanced operations (e.g., if you need to use the Tor `ControlPort <#tor-controlport>`_ and have control over the Tor service). For Debian-based distributions, it should be as straightforward as entering the below command:
 
 .. code-block::
 
@@ -184,9 +184,9 @@ You can install the Tor service from the packages for advanced operations (e.g.,
 
 Tor ControlPort
 ===============
-The ``ControlPort`` connects with the Tor process and sends commands. You can use it to change the configuration and get information about the network, Tor circuits, etc. As explained in the last chapter of this book, OnionIngestor requires it.
+The *ControlPort* connects with the Tor process and sends commands. You can use it to change the configuration and get information about the network, Tor circuits, etc. As explained in the last chapter of this book, OnionIngestor requires it.
 
-To enable Tor ``ControlPort``, edit the ``/etc/tor/torrc`` configuration file and uncomment the ``ControlPort`` and ``HashedControlPassword`` lines as highlighted below:
+To enable Tor *ControlPort*, edit the ``/etc/tor/torrc`` configuration file and uncomment the ``ControlPort`` and ``HashedControlPassword`` lines as highlighted below:
 
 .. code-block::
    :emphasize-lines: 3, 6
@@ -213,7 +213,7 @@ As shown above, the resulting string must be pasted into the ``/etc/tor/torrc`` 
 
 .. note::
 
-   Notice that the ports used for the Tor SOCKS proxy and ControlPort are different depending on how you have started the Tor service.
+   Notice that the ports used for the Tor SOCKS proxy and `ControlPort <#tor-controlport>`_ are different depending on how you have started the Tor service.
 
    .. list-table::
       :header-rows: 1
