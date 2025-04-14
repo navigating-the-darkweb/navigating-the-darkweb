@@ -2,4 +2,4 @@
 
 **SEBASTIEN DAMAYE**
 
-(C) 2025
+Read the book here: https://navigating-the-darkweb.readthedocs.io
