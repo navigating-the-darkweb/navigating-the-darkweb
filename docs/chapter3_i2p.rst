@@ -9,7 +9,7 @@ The “Invisible Internet Project” (I2P) is an encrypted and anonymous overlay
 
 History of I2P
 ==============
-In October 2001, a developer named Lance James (aka 0x90) created the Invisible IRC Project (IIP), an initiative to anonymously and privately talk using IRC. However, this project alone was not a big enough target to face the competition (at this time, Freenet, GNUnet, and Tor), and a more extensive project was created: the InvisibleNet [#]_.
+In October 2001, a developer named “Lance James” (aka “0x90”) created the Invisible IRC Project (IIP), an initiative to anonymously and privately talk using Internet Relay Chat (IRC). However, this project alone was not a big enough target to face the competition (at this time, Freenet, GNUnet, and Tor), and a more extensive project was created: the InvisibleNet [#]_.
 
 In 2003, a developer named “jrandom” took over the project and decided to rewrite the code in Java. He redesigned the IIP protocol (i.e., the “garlic routing”) and renamed the project “the Invisible Internet Project” or “I2P”.
 
@@ -31,7 +31,7 @@ How Does I2P Work?
 ==================
 A Peer-to-Peer Network
 ----------------------
-I2P is designed as a peer-to-peer network where every user is a node of the global I2P network, which can be either a server that hosts a darknet service (called eepsites) or a client who accesses the servers and services hosted by other nodes. This is a significant difference from Tor, where only volunteers host a Tor node (see previous chapter).
+I2P is designed as a peer-to-peer network where every user is a node of the global I2P network, which can be either a server that hosts a darknet service (called eepsites) or a client who accesses the servers and services hosted by other nodes. This is a significant difference from Tor, where only volunteers host a Tor node (see `previous chapter <chapter2_tor.html#the-tor-network>`_).
 
 Tunnels and the Network Database
 --------------------------------
@@ -99,7 +99,8 @@ Run the installer as follows:
 
 .. code-block::
 
-   $ java -jar i2pinstall_2.7.0.jar
+   $ wget https://files.i2p-projekt.de/2.8.2/i2pinstall_2.8.2.jar
+   $ java -jar i2pinstall_2.8.2.jar
 
 It will install I2P in the chosen location. Once the installation is complete, continue with the setup, as explained in the next section.
 
@@ -123,7 +124,7 @@ It will automatically open your default browser to the welcome page [#]_. If you
 
    Language selection in the I2P Java installer.
 
-Click “Next” until you reach the bandwidth test. This step shouldn’t be ignored, as the installer will test your Internet connection to determine how much bandwidth should be allocated automatically. Notice that you can manually modify the values at any time, even after the installation is complete.
+Click **Next** until you reach the bandwidth test. This step shouldn’t be ignored, as the installer will test your Internet connection to determine how much bandwidth should be allocated automatically. Notice that you can manually modify the values at any time, even after the installation is complete.
 
 .. figure:: images/image66.png
    :width: 800
@@ -132,7 +133,7 @@ Click “Next” until you reach the bandwidth test. This step shouldn’t be ig
 
    Bandwidth configuration in the I2P Java installer.
 
-Click “Next” until you eventually reach the end of the installation process.
+Click **Next** until you eventually reach the end of the installation process.
  
 .. figure:: images/image67.png
    :width: 800
@@ -173,7 +174,8 @@ For example, on a Debian 12 (Bookworm) distribution, run the following commands:
 
 .. code-block::
 
-   $ sudo dpkg -i i2pd_2.54.0-1bookworm1_amd64.deb
+   $ wget https://github.com/PurpleI2P/i2pd/releases/download/2.56.0/i2pd_2.56.0-1bookworm1_amd64.deb
+   $ sudo dpkg -i i2pd_2.56.0-1bookworm1_amd64.deb
    $ sudo apt -f install
 
 Two new ports should now be opened: 4444 (proxy) and 7070 (console).
@@ -194,7 +196,7 @@ To stop the i2pd service, run the below command:
 
 Proxy Configuration and Webconsole
 ----------------------------------
-In Firefox, go to ``Preferences > Advanced > Network tab > Connection Settings``. Select ``Manual proxy configuration`` and enter ``127.0.0.1`` and ``4444``, respectively, for the host and the port.
+In Firefox, go to **Preferences > Advanced > Network tab > Connection Settings**. Select **Manual proxy configuration** and enter ``127.0.0.1`` and ``4444``, respectively, for the host and the port.
 
 Now, connect to http://127.0.0.1:7070 and make sure that you can access the console:
  

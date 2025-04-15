@@ -20,7 +20,7 @@ I began to think that an online book would be a better place, especially because
 
 An online version can contain hyperlinks that redirect to other parts of the book, making the reading process much more interactive.
 
-Besides, there are many links, code extracts and command lines that you can copy and paste if needed.
+Besides, this book contains many links, code extracts and command lines that you can copy with a simple click.
 
 And because all the content is indexed, searching for a particular term is also much easier online.
 
