@@ -250,11 +250,11 @@ Outproxies
 ==========
 I2P was not initially designed to create proxies for the Internet. Instead, it is meant to be used as an internal network (darknet). However, if you want to use I2P to access the Surface Web, you must configure an outproxy.
 
-There are several outproxies (``stormycloud.i2p``, ``false.i2p``, ``outproxy-tor.meeh.i2p``, ``bandura.i2p``, ``purokishi.i2p``), but some of them are no longer available (e.g., ``false.i2p``) or quite unreliable. When writing, ``purokishi.i2p`` and ``exit.stormycloud.i2p`` [#]_ worked.
+There are several outproxies (`stormycloud.i2p <http://stormycloud.i2p>`_, `false.i2p <http://false.i2p>`_, `outproxy-tor.meeh.i2p <http://outproxy-tor.meeh.i2p>`_, `bandura.i2p <http://bandura.i2p>`_, `purokishi.i2p <http://purokishi.i2p>`_), but some of them are no longer available (e.g., `false.i2p <http://false.i2p>`_) or quite unreliable. When writing, `purokishi.i2p <http://purokishi.i2p>`_ and `exit.stormycloud.i2p <http://exit.stormycloud.i2p>`_ [#]_ worked.
 
 Outproxies in I2P Router
 ------------------------
-In I2P Router, go to the “Hidden Services Manager” menu [#]_, and under the “I2P Client Tunnels” section, edit the “I2P HTTP Proxy” entry. Add ``exit.stormycloud.i2p`` for both “Outproxies” and “SSL Outproxies” as shown below:
+In I2P Router, go to the **Hidden Services Manager** menu [#]_, and under the **I2P Client Tunnels** section, edit the “I2P HTTP Proxy” entry. Add ``exit.stormycloud.i2p`` for both **Outproxies** and **SSL Outproxies** as shown below:
  
 .. figure:: images/image72.png
    :width: 800
@@ -265,13 +265,14 @@ In I2P Router, go to the “Hidden Services Manager” menu [#]_, and under the 
 
 .. note::
 
-   It is possible to specify multiple outproxies by separating the names with a comma like this: “exit.stormycloud.i2p,purokishi.i2p.”
+   It is possible to specify multiple outproxies by separating the names with a comma like this: ``exit.stormycloud.i2p,purokishi.i2p``.
 
 Outproxies in i2pd
 ------------------
 To configure an outproxy in i2pd, edit the ``[httpproxy]`` section of the ``/etc/i2pd/i2pd.conf`` file as shown below.
 
 .. code-block::
+   :caption: ``/etc/i2pd/i2pd.conf`` (extract)
    
    [httpproxy]
    port = 4444
@@ -285,13 +286,13 @@ Restart the i2pd service to apply the changes.
 
 Directories and Search Engines
 ******************************
-Some search engines exist on I2P (e.g., ``legwork.i2p``, ``ransack.i2p``), but there are also directories of eepsites, which are good resources to contents you can find on I2P if you don’t know where to start:
+Some search engines exist on I2P (e.g., `legwork.i2p <http://legwork.i2p>`_, `ransack.i2p <http://ransack.i2p>`_), but there are also directories of eepsites, which are good resources to contents you can find on I2P if you don’t know where to start:
 
 Directories
 ===========
 Reg.i2p
 -------
-``Reg.i2p`` [#]_ is a directory that maintains a list of eepsites and constantly updates (every 4 hours) a list of new sites and sites that are alive.
+Reg.i2p [#]_ is a directory that maintains a list of eepsites and constantly updates (every 4 hours) a list of new sites and sites that are alive.
  
 .. figure:: images/image73.png
    :width: 800
@@ -321,7 +322,7 @@ There are other directories available on I2P. Some examples are given below:
 
 Search Engines
 ==============
-There are search engines available on the I2P darknet that list results for the Surface Web (e.g., ``duckduckgo.i2p``) or Tor (e.g., ``ahmia.i2p``, ``raklet.i2p`` or ``torch.i2p``).
+There are search engines available on the I2P darknet that list results for the Surface Web (e.g., `duckduckgo.i2p <http://duckduckgo.i2p>`_) or Tor (e.g., `ahmia.i2p <http://ahmia.i2p>`_, `raklet.i2p <http://raklet.i2p>`_ or `torch.i2p <http://torch.i2p>`_).
 
 It is also worth mentioning I2P Search [#]_, an eepsites search engine accessible from the Surface Web and Tor [#]_.
 
@@ -357,7 +358,7 @@ This section details the built-in applications shipped with I2P Router.
 
    The applications listed below are not shipped with the i2pd service, but some have their equivalent features in i2pd (e.g., the address book also exists in i2pd), and you may also host your eepsite, as explained later.
 
-In I2P Router, applications are available from the “Applications” tab of the main screen. A complete list of I2P applications is available on GitHub [#]_.
+In I2P Router, applications are available from the **Applications** tab of the main screen. A complete list of I2P applications is available on GitHub [#]_.
  
 .. figure:: images/image77.png
    :width: 800
@@ -368,7 +369,7 @@ In I2P Router, applications are available from the “Applications” tab of the
 
 Address Book
 ============
-In I2P, there is no central naming authority, and instead, all hostnames are local. Each node maintains its address book, a ``hosts.txt`` file that lists key-value pairs composed of human-readable names (e.g., ``zzz.i2p``), and a long bas64 encoded string that is the actual address of the eepsite. This can be seen in the I2P Address Book, as shown below.
+In I2P, there is no central naming authority, and instead, all hostnames are local. Each node maintains its address book, a ``hosts.txt`` file that lists key-value pairs composed of human-readable names (e.g., `zzz.i2p <http://zzz.i2p>`_), and a long bas64 encoded string that is the actual address of the eepsite. This can be seen in the I2P Address Book, as shown below.
  
 .. figure:: images/image78.png
    :width: 800
@@ -401,7 +402,7 @@ In i2pd, address books are managed through the ``/etc/i2pd/i2pd.conf`` configura
 
 Email (Susimail)
 ================
-Susimail is a Java web-based email client installed by default with I2P Router and was created to address privacy concerns. Susimail is intended primarily for use with Postman's mail servers. To send and receive emails, you’ll first need to create an account by clicking the “Create Account” button as shown below.
+Susimail is a Java web-based email client installed by default with I2P Router and was created to address privacy concerns. Susimail is intended primarily for use with Postman's mail servers. To send and receive emails, you’ll first need to create an account by clicking the **Create Account** button as shown below.
  
 .. figure:: images/image81.png
    :width: 800
@@ -410,7 +411,7 @@ Susimail is a Java web-based email client installed by default with I2P Router a
 
    The Susimail authentication page in I2P, and the “Create Account” button.
 
-You will be redirected to ``hq.postman.i2p``, where you will be able to create and manage your account.
+You will be redirected to `hq.postman.i2p <http://hq.postman.i2p>`_, where you will be able to create and manage your account.
  
 .. figure:: images/image82.png
    :width: 800
@@ -483,6 +484,7 @@ I2PSnark is shipped with I2P Router by default. If you are running i2pd and want
 You’ll also need to enable the I2P Client Protocol (I2CP) in ``/etc/i2pd/i2pd.conf``:
 
 .. code-block::
+   :caption: ``/etc/i2pd/i2pd.conf`` (extract)
    
    [i2cp]
    ## Enable the I2CP protocol (default: false)
@@ -508,7 +510,7 @@ Depending on the installer, the root of the web server should be one of the foll
 - ``~/.i2p/eepsite/docroot``
 - ``/var/lib/i2p/i2p-config/eepsite/docroot``
 
-Once you have uploaded your sources to the appropriate ``docroot`` folder, go to the “Hidden Services Manager” and find the “I2P Hidden Services” section, as shown in the figure below.
+Once you have uploaded your sources to the appropriate ``docroot`` folder, go to the **Hidden Services Manager** and find the **I2P Hidden Services** section, as shown in the figure below.
  
 .. figure:: images/image88.png
    :width: 800
@@ -517,7 +519,7 @@ Once you have uploaded your sources to the appropriate ``docroot`` folder, go to
 
    The Hidden Services Manager in I2P Router.
 
-Click on the “I2P webserver” link to edit its configuration. Once on the configuration page, edit the website hostname (URL) and description of your eepsite, and click the “Save” button at the bottom of the form.
+Click the **I2P webserver** link to edit its configuration. Once on the configuration page, edit the website hostname (URL) and description of your eepsite, and click the **Save** button at the bottom of the form.
  
 .. figure:: images/image89.png
    :width: 800
@@ -528,11 +530,11 @@ Click on the “I2P webserver” link to edit its configuration. Once on the con
 
 .. note::
 
-   The “Local destination” field contains a string you’ll need to use to publish your eepsite in the address book later. Clicking on the “Add to local addressbook” button will only add your hostname to the private address book.
+   The **Local destination** field contains a string you’ll need to use to publish your eepsite in the address book later. Clicking the **Add to local addressbook** button will only add your hostname to the private address book.
 
 Check your Eepsite
 ------------------
-Now, click the “Start” button to share your eepsite on I2P. Test the I2P link in your browser to make sure it works.
+Now, click the **Start** button to share your eepsite on I2P. Test the I2P link in your browser to make sure it works.
  
 .. figure:: images/image90.png
    :width: 800
@@ -554,7 +556,7 @@ In I2P Router, the published Address Book can add your eepsite to a ``hosts.txt`
 
 .. note::
 
-   To register your domain, most I2P Name Registry services will require your Authentication Registration key, which you can get by clicking on your I2P webserver (under the “I2P Hidden Services” section) from the I2P Hidden Services console and then on the “Registration Authentication” button.
+   To register your domain, most I2P Name Registry services will require your Authentication Registration key, which you can get by clicking on your I2P webserver (under the **I2P Hidden Services** section) from the I2P Hidden Services console and then on the **Registration Authentication** button.
 
 With i2pd
 =========
@@ -571,6 +573,7 @@ On Ubuntu or Debian, installing Nginx is straightforward:
 If not already there, create the following ``default`` file in ``/etc/nginx/sites-available``:
 
 .. code-block::
+   :caption: ``/etc/nginx/sites-available``
 
    server {
        listen 80 default_server;
@@ -615,7 +618,7 @@ And restart i2pd
 
 Check your Eepsite
 ------------------
-Now, we need to find the URL of our hidden service, which is available from the console [#]_ by clicking on the “I2P tunnels” link. If i2pd detects your web server, the address should appear under the “Server tunnels” section, as shown below.
+Now, we need to find the URL of our hidden service, which is available from the console [#]_ by clicking the **I2P tunnels** link. If i2pd detects your web server, the address should appear under the **Server tunnels** section, as shown below.
 
 .. figure:: images/image92.png
    :width: 800
@@ -626,7 +629,7 @@ Now, we need to find the URL of our hidden service, which is available from the 
 
 Getting the Authentication Registration
 ---------------------------------------
-When registering your domain (see next section), you may be asked to provide your authentication registration. To get it from the i2pd web console, go to ``I2P tunnels > anon-website``. Below the base64 field, you’ll find an “Address registration line” link that will allow you to get the authentication string and publish your eepsite to ``reg.i2p``.
+When registering your domain (see next section), you may be asked to provide your authentication registration. To get it from the i2pd web console, go to **I2P tunnels > anon-website**. Below the base64 field, you’ll find an **Address registration line** link that will allow you to get the authentication string and publish your eepsite to `reg.i2p <http://reg.i2p>`_.
  
 .. figure:: images/image93.png
    :width: 800
@@ -652,14 +655,14 @@ The I2PRouter interface may not seem very user-friendly and quite complex, espec
 
 I2P might be slow sometimes, though it got faster with the last updates.
 
-I2P suffers from a lack of sustainable sites. Only 12% of the eepsites indexed by ``reg.i2p`` are alive.
+I2P suffers from a lack of sustainable sites. Only 12% of the eepsites indexed by `reg.i2p <http://reg.i2p>`_ are alive.
  
 .. figure:: images/image94.png
    :width: 800
-   :alt: Only 12% of the eepsites indexed byreg.i2p are alive
+   :alt: Only 12% of the eepsites indexed by reg.i2p are alive
    :class: with-border
 
-   Only 12% of the eepsites indexed byreg.i2p are alive.
+   Only 12% of the eepsites indexed by reg.i2p are alive.
 
 Unlike Tor where access to Onion Services is immediate, I2P requires that you maintain a server up and running for it to be fully integrated into the network. Otherwise, you’ll have to wait a long time to browse eepsites.
  
@@ -694,7 +697,7 @@ I2P has not been designed for exit traffic, and if outproxies exist, it is recom
 .. [#] http://i2psearch.i2p/
 .. [#] http://legwork.i2p/
 .. [#] https://github.com/i2p/i2p.i2p/tree/master/apps
-.. [#] To configure SusiDNS to push your router address book to your published address book, set “should_publish=true” on the configuration page.
+.. [#] To configure SusiDNS to push your router address book to your published address book, set ``should_publish=true`` on the configuration page.
 .. [#] http://klomp.org/snark/
 .. [#] https://gitlab.com/i2pplus/I2P.Plus/-/jobs/artifacts/master/raw/i2psnark-standalone.zip?job=Java8
 .. [#] https://i2pd.readthedocs.io/en/latest/tutorials/filesharing/

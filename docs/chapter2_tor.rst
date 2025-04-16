@@ -190,7 +190,7 @@ To enable Tor *ControlPort*, edit the ``/etc/tor/torrc`` configuration file and 
 
 .. code-block::
    :emphasize-lines: 3, 6
-   :caption: /etc/tor/torrc (extract)
+   :caption: ``/etc/tor/torrc`` (extract)
    
    ## The port on which Tor will listen for local connections from Tor
    ## controller applications, as documented in control-spec.txt.
@@ -301,7 +301,7 @@ Configure Bridges in Torrc
 If you are running the Tor service, you can configure it to use bridges. To do so, install the ``obfs4proxy`` package (on Debian-based distributions, run ``sudo apt update && sudo apt install obfs4proxy``) and add the following lines to ``/etc/tor/torrc``:
 
 .. code-block::
-   :caption: /etc/tor/torrc (extract)
+   :caption: ``/etc/tor/torrc`` (extract)
    :emphasize-lines: 3
 
    UseBridges 1 
@@ -683,7 +683,7 @@ Ensure the server only allows ``localhost`` (critical to guarantee anonymity). A
 
 .. code-block::
    :emphasize-lines: 1,3,6
-   :caption: /etc/apache2/ports.conf
+   :caption: ``/etc/apache2/ports.conf``
    
    Listen 127.0.0.1:80
    <IfModule ssl_module>
@@ -696,7 +696,7 @@ Ensure the server only allows ``localhost`` (critical to guarantee anonymity). A
 Host an ``index.html`` or ``index.php`` file in ``/var/www/html`` with the following content:
 
 .. code-block::
-   :caption: /var/www/html/index.html
+   :caption: ``/var/www/html/index.html``
 
    <html>
      <head>
@@ -716,7 +716,7 @@ Now, restart apache2:
 To add the website to Tor, edit ``/etc/tor/torrc`` as follows:
 
 .. code-block::
-   :caption: /etc/tor/torrc (extract)
+   :caption: ``/etc/tor/torrc`` (extract)
    :emphasize-lines: 10,11
 
    ############### This section is just for location-hidden services ###
