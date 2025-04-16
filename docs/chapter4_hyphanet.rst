@@ -53,18 +53,18 @@ The Hyphanet Routing Protocol
 -----------------------------
 The Hyphanet protocol uses a key-based routing protocol similar to Distributed Hash Tables (DHT). Each node is only aware of some other nodes, called neighbors. When a node requests a file, the message is routed through the network by traveling from neighbor to neighbor until it reaches the destination, as depicted by the example below.
 
-1.	The host labeled “A” requests a file hosted on “E”. Host “A” first sends a data request to “B”, which is in the neighborhood.
-2.	As “B” doesn’t have the requested resource, it forwards the request to “C.”
-3.	If “C” doesn’t have the file and cannot forward the request to another node, it will send a “request failed” message to “B.” It’s a dead end.
-4.	As a result, “B” sends the request back to “D,” another neighbor.
-5.	Unfortunately, “D” doesn’t have the file either and forwards the request to “F.”
-6.	“F” doesn’t have the file and, by chance, forwards the request to “B” as it was listed in his neighbors. “F” had no way of knowing that the request had already been submitted from “D” by “B” (this is the principle of anonymity).
-7.	“B” identifies that the request forwarded to “D” is looping. It informs “F” with a “request failed” message.
-8.	As a result, “F” forwards this failure message to “D.”
-9.	“D” forwards the data request to “E.”
-10.	Fortunately, “E” has the requested resource and shares it with “D.”
-11.	“D” makes a copy of the resource and sends it back to “B,” who was known to have requested it.
-12.	“B” also copies the resource in its data store and sends it to “A,” the initial requester. The file will also be copied on “A.”
+1.	The host labeled **A** requests a file hosted on **E**. Host **A** first sends a data request to **B**, which is in the neighborhood.
+2.	As **B** doesn’t have the requested resource, it forwards the request to **C**.
+3.	If **C** doesn’t have the file and cannot forward the request to another node, it will send a “request failed” message to **B**. It’s a dead end.
+4.	As a result, **B** sends the request back to **D**, another neighbor.
+5.	Unfortunately, **D** doesn’t have the file either and forwards the request to **F**.
+6.	**F** doesn’t have the file and, by chance, forwards the request to **B** as it was listed in his neighbors. **F** had no way of knowing that the request had already been submitted from **D** by **B** (this is the principle of anonymity).
+7.	**B** identifies that the request forwarded to **D** is looping. It informs **F** with a “request failed” message.
+8.	As a result, **F** forwards this failure message to **D**.
+9.	**D** forwards the data request to **E**.
+10.	Fortunately, **E** has the requested resource and shares it with **D**.
+11.	**D** makes a copy of the resource and sends it back to **B**, who was known to have requested it.
+12.	**B** also copies the resource in its data store and sends it to **A**, the initial requester. The file will also be copied on **A**.
  
 .. figure:: images/image96.png
    :width: 500
@@ -165,7 +165,7 @@ Search Engine
 =============
 Native Search Engine
 --------------------
-Hyphanet's native search engine relies on several indexes. Enter your search terms, select the indexes you want to use and click “Find.”
+Hyphanet's native search engine relies on several indexes. Enter your search terms, select the indexes you want to use and click **Find**.
 
 Searches can take several minutes, as all selected indexes will be requested. As shown below, progress bars show the progress of the search.
  
@@ -187,7 +187,7 @@ Once the search process is complete, the results of the search will appear as fo
 
 .. note::
 
-   It is possible to manage the indexes (add more or delete existing ones) for the search. However, the more indexes there are, the longer the search will take.
+   It is possible to manage the indexes (add more or delete existing ones) for the search. The more indexes there are, the longer the search will take.
 
 Freesites Connectivity Graph
 ----------------------------
@@ -232,7 +232,7 @@ This plugin is required for some applications, including Sone, Freemail, and Fre
 
 Installation
 ------------
-From the Hyphanet main page, go to the plugins page [#]_ and select “WebOfTrust.” Then click on the “Load” button.
+From the Hyphanet main page, go to the plugins page [#]_ and select **WebOfTrust**. Then click the **Load** button.
  
 .. figure:: images/image106.png
    :width: 800
@@ -252,7 +252,7 @@ The plugin will download:
 
 Create a New Identity
 ---------------------
-Once the “WebOfTrust” plugin has been downloaded, a new entry is available in the “Community” menu. Click on “Log in”. Then, select the “Generate a new, random secret key” option and click the “Continue” button.
+Once the “WebOfTrust” plugin has been downloaded, a new entry is available in the **Community** menu. Click on **Log in**. Then, select the **Generate a new, random secret key** option and click the **Continue** button.
  
 .. figure:: images/image108.png
    :width: 800
@@ -261,7 +261,7 @@ Once the “WebOfTrust” plugin has been downloaded, a new entry is available i
 
    Creation of a new identity in WebOfTrust (generate a new key).
 
-Choose a name and click on the “Continue” button.
+Choose a name and click the **Continue** button.
  
 .. figure:: images/image109.png
    :width: 800
@@ -270,7 +270,7 @@ Choose a name and click on the “Continue” button.
 
    Creation of a new identity in WebOfTrust (choosing a name).
 
-You'll need to solve captchas at the end of the registration process. Go to ``Community > My Identity > Announce``.
+You'll need to solve captchas at the end of the registration process. Go to **Community > My Identity > Announce**.
  
 .. figure:: images/image110.png
    :width: 800
@@ -279,7 +279,7 @@ You'll need to solve captchas at the end of the registration process. Go to ``Co
 
    Creation of a new identity in WebOfTrust (announce).
 
-After you've solved about ten puzzles, it's just waiting for the other identities to recognize you. Your identity is successfully introduced when the number of Trusters changes to something greater than zero. You should try getting at least five Trusters, so repeat the introduction if necessary.
+After you've solved about ten puzzles, wait for the other identities to recognize you. Your identity is successfully introduced when the number of Trusters changes to something greater than zero. You should try getting at least five Trusters, so repeat the introduction if necessary.
  
 .. figure:: images/image111.png
    :width: 800
@@ -290,7 +290,7 @@ After you've solved about ten puzzles, it's just waiting for the other identitie
 
 Back-Up and Restore your Identity
 ---------------------------------
-Once you have an identity, it is essential to save it to restore it later if something goes wrong with your installation or if you need to reinstall Hyphanet. To back up your identity, go to ``Community > My identity`` and click on the “Edit” button. Copy both your public and secret keys in your favorite password manager.
+Once you have an identity, it is essential to save it to restore it later if something goes wrong with your installation or if you need to reinstall Hyphanet. To back up your identity, go to **Community > My identity** and click the **Edit** button. Copy both your public and secret keys in your favorite password manager.
  
 .. figure:: images/image112.png
    :width: 800
@@ -299,7 +299,7 @@ Once you have an identity, it is essential to save it to restore it later if som
 
    WOT public and secret keys in Hyphanet.
 
-To restore your identity, do as if you would create a new identity, as described in the previous section, and choose the “Re-use an old secret key” option instead of “Generate a new, random secret key.” When asked to provide your secret key, copy it from your password manager and paste the entire string (starting with ``USK@``) into the form. On the next screen, you will be asked to specify whether your private key has been used with Web of Trust in the past. If you have used this identity to authenticate on services like Freemail or Sone, you should use the first option.
+To restore your identity, do as if you would create a new identity, as described in the previous section, and choose the **Re-use an old secret key** option instead of **Generate a new, random secret key**. When asked to provide your secret key, copy it from your password manager and paste the entire string (starting with ``USK@``) into the form. On the next screen, you will be asked to specify whether your private key has been used with Web of Trust in the past. If you have used this identity to authenticate on services like Freemail or Sone, you should use the first option.
  
 .. figure:: images/image113.png
    :width: 800
@@ -320,7 +320,7 @@ FMS was designed to address problems with Frost, such as Denial of Service attac
 
 Installation
 ------------
-To install FMS, click on the “Freenet Message System” widget under the “Freenet related software” section of Hyphanet’s main page (127.0.0.1:8888). You will be redirected to the FMS web page, where you can download the FMS client for your operating system, as depicted below.
+To install FMS, click on the **Freenet Message System** widget under the **Freenet related software** section of Hyphanet’s main page (http://127.0.0.1:8888). You will be redirected to the FMS web page, where you can download the FMS client for your operating system, as depicted below.
  
 .. figure:: images/image114.png
    :width: 800
@@ -345,7 +345,7 @@ Once FMS has been downloaded, a new file (e.g., ``fms-linux-amd64-bin-0.3.85.tar
    $ tar xzvf fms-linux-amd64-bin-0.3.85.tar.gz
    $ rm -f fms-linux-amd64-bin-0.3.85.tar.gz
 
-The last thing you need to do before launching FMS is to install the libfreeimage libraries:
+The last thing you need to do before launching FMS is to install the "libfreeimage" libraries:
 
 .. code-block::
 
@@ -359,7 +359,7 @@ Now, start the FMS server as follows:
 
 .. note::
 
-   The FMS server does not start automatically with Hyphanet. If you want to start the service automatically, you can write a custom startup service with systemctl.
+   The FMS server does not start automatically with Hyphanet. If you want to start the service automatically, you can write a custom startup service with "systemctl".
 
 Configuration
 -------------
@@ -398,7 +398,7 @@ The interesting part is:
 
    BwjQ6myK6gU9ZLUEDaFHaIRV7n6rkNDEvP8W6WB5wQ4,8laZ0ECv-beFkDttKgRXq8HCBdTdaLULDIcuw-lkV2c,AQACAAE
 
-Save the resulting XML file somewhere on your disk (e.g., ``fms_id.xml``). Click on the “Local Identities” link in FMS from the menu. Click on the “Browse” button to pick the XML file, and then on the “Import Identities” button.
+Save the resulting XML file somewhere on your disk (e.g., ``fms_id.xml``). Click the **Local Identities** link in FMS from the menu. Click the **Browse** button to pick the XML file, and then the **Import Identities** button.
  
 .. figure:: images/image117.png
    :width: 800
@@ -407,7 +407,7 @@ Save the resulting XML file somewhere on your disk (e.g., ``fms_id.xml``). Click
 
    Import your WoT identity in FMS (1/2).
    
-Now, optionally provide the form with the URI of an avatar you may have inserted on Hyphanet and a signature. Ensure “Image Captcha with Letters” is selected in the “Introduction Puzzle Type” dropdown. Click on the “Update” button.
+Now, optionally provide the form with the URI of an avatar you may have inserted on Hyphanet and a signature. Ensure **Image Captcha with Letters** is selected in the **Introduction Puzzle Type** dropdown. Click the **Update** button.
  
 .. figure:: images/image118.png
    :width: 800
@@ -416,9 +416,9 @@ Now, optionally provide the form with the URI of an avatar you may have inserted
 
    Import your WoT identity in FMS (2/2).
 
-After you click the “Update” button, click the “Insert” link to confirm that you want to publish your identity.
+After you click the **Update** button, click the **Insert** link to confirm that you want to publish your identity.
 
-Now, click “Announce Identity” from the menu, fill in the captcha puzzles, and click the “Announce” button. Notice that you will need to do it several times, as new captchas will be presented until you complete all captchas. Beware that they are case-sensitive. Getting announced will take some time, and you must assign trust to other identities to see yourself announced. Do not continuously solve captchas. Solve 30 at most, wait a day, and if your identity has not been announced, repeat until it is.
+Now, click **Announce Identity** from the menu, fill in the captcha puzzles, and click the **Announce** button. Notice that you will need to do it several times, as new captchas will be presented until you complete all captchas. Beware that they are case-sensitive. Getting announced will take some time, and you must assign trust to other identities to see yourself announced. Do not continuously solve captchas. Solve 30 at most, wait a day, and if your identity has not been announced, repeat until it is.
  
 .. figure:: images/image119.png
    :width: 800
@@ -429,7 +429,7 @@ Now, click “Announce Identity” from the menu, fill in the captcha puzzles, a
 
 Using FMS
 ---------
-From the FMS home page [#]_, click “Browse Forums” from the left menu to show the existing forums list. Notice the dropdown on the left of the “Sign In” button, which contains a list of identities you have previously imported. Be sure to be signed in to post messages.
+From the FMS home page [#]_, click **Browse Forums** from the left menu to show the existing forums list. Notice the dropdown on the left of the **Sign In** button, which contains a list of identities you have previously imported. Be sure to be signed in to post messages.
  
 .. figure:: images/image120.png
    :width: 800
@@ -449,7 +449,7 @@ Forums with a yellow star are the ones you haven’t opened yet. Clicking on a f
 
 The “test” forum can be used to test that everything is working fine for you, and I recommend that you use it to familiarize yourself with FMS.
 
-Only some forums are shown in this list by default, but more are available. To see more forums, go to the “Board Maintenance” section available from the main menu, and in the list, check the boxes of corresponding forums you want to see in your list.
+Only some forums are shown in this list by default, but more are available. To see more forums, go to the **Board Maintenance** section available from the main menu, and in the list, check the boxes of corresponding forums you want to see in your list.
  
 .. figure:: images/image122.png
    :width: 800
@@ -473,7 +473,7 @@ Once successfully installed, the application should appear as a new menu in Hyph
 
    The Freemail application in Hyphanet.
 
-The Freemail application allows users to send, read, and delete emails to people within the Hyphanet darknet, meaning that you won’t be able to send emails to providers in the Clearnet (e.g., Gmail, Yahoo, Microsoft, …). The “About” page will show your email address as well as IMAP and SMTP settings that you can use to configure a mail client (e.g., Claws, Thunderbird, etc.) in case you need more advanced control over your emails (e.g., PGP, archive, etc.).
+The Freemail application allows users to send, read, and delete emails to people within the Hyphanet darknet, meaning that you won’t be able to send emails to providers in the Clearnet (e.g., Gmail, Yahoo, Microsoft, …). The **About** page will show your email address as well as IMAP and SMTP settings that you can use to configure a mail client (e.g., Claws, Thunderbird, etc.) in case you need more advanced control over your emails (e.g., PGP, archive, etc.).
 
 Sone
 ====
@@ -487,7 +487,7 @@ Sone is a plugin that offers communication possibilities like X or Facebook. It�
 
 Installation
 ------------
-To install Sone, go to ``Configuration > Plugins`` and enter the following URI [#]_ in the plugin key field at the bottom of the screen: 
+To install Sone, go to **Configuration > Plugins** and enter the following URI [#]_ in the plugin key field at the bottom of the screen: 
 
    USK\@nwa8lHa271k2QvJ8aa0Ov7IHAV-DFOCFgmDt3X6BpCI,DuQSUZiI~agF8c-6tjsFFGuZ8eICrzWCILB60nT8KKo,AQACAAE/sone/82/sone-current.jar
 
@@ -511,7 +511,7 @@ Once the plugin has been successfully downloaded, you should have a Sone menu in
 
 Log In, Log Out, and Using Multiple Identities
 ----------------------------------------------
-Like several other Hyphanet applications, Sone uses the WebOfTrust plugin to identify you. To log in, select “Login” from the “Sone” menu, select an identity from the dropdown list, and click on the “Create Sone” button.
+Like several other Hyphanet applications, Sone uses the `WebOfTrust <#web-of-trust-wot>`_ plugin to identify you. To log in, select **Login** from the **Sone** menu, select an identity from the dropdown list, and click the **Create Sone** button.
  
 .. figure:: images/image126.png
    :width: 800
@@ -520,10 +520,10 @@ Like several other Hyphanet applications, Sone uses the WebOfTrust plugin to ide
 
    Login to Sone in Hyphanet.
 
-If you have multiple identities, a logout entry will be added to the menu, allowing you to easily log out from one profile and use the other identity.
+If you have multiple identities, a **Logout** entry will be added to the menu, allowing you to easily log out from one profile and use the other identity.
  
 .. figure:: images/image127.png
-   :width: 800
+   :width: 600
    :alt: A logout entry in Sone allows you to switch identity
    :class: with-border
 
@@ -531,7 +531,7 @@ If you have multiple identities, a logout entry will be added to the menu, allow
 
 Using Sone
 ----------
-Sone allows you to follow other Sone users who you can find from the “Known Sones” entry in the “Sone” menu or by searching a given name in the search field. Click on a profile's “follow” link to subscribe to the user’s Sones.
+Sone allows you to follow other Sone users who you can find from the **Known Sones** entry in the **Sone** menu or by searching a given name in the search field. Click on a profile's **follow** link to subscribe to the user’s Sones.
  
 .. figure:: images/image128.png
    :width: 800
@@ -540,7 +540,7 @@ Sone allows you to follow other Sone users who you can find from the “Known So
 
    Known Sones in the Sone Hyphanet application.
 
-In Sone, you can publish posts, reply to other users’ posts, like posts, add comments to their posts, publish albums, and save bookmarks. To create a new post, go to “Sone > Your Sone” and add content under the “Post Feed” section.
+In Sone, you can publish posts, reply to other users’ posts, like posts, add comments to their posts, publish albums, and save bookmarks. To create a new post, go to **Sone > Your Sone** and add content under the **Post Feed** section.
  
 .. figure:: images/image129.png
    :width: 800
@@ -549,7 +549,7 @@ In Sone, you can publish posts, reply to other users’ posts, like posts, add c
 
    Posting in Sone.
    
-To create or edit an album and add pictures, go to “Sone > Images.” Click “Create album” from here to create a new album. Once the album is created, click “Upload image” to add new images.
+To create or edit an album and add pictures, go to **Sone > Images**. Click **Create album** from here to create a new album. Once the album is created, click **Upload image** to add new images.
  
 .. figure:: images/image130.png
    :width: 800
@@ -571,7 +571,7 @@ To install the server, copy the URL on the FLIP download page (the FLIP link is 
 
    Copy the plugin link of the FLIP installation.
 
-Now go to “Configuration > Plugins” and scroll to the very bottom of the page. Paste the part of the URL starting with “CHK@” in the field and click on the “Load” button.
+Now go to **Configuration > Plugins** and scroll to the very bottom of the page. Paste the part of the URL starting with ``CHK@`` in the field and click the **Load** button.
  
 .. figure:: images/image132.png
    :width: 800
@@ -595,7 +595,7 @@ What is JSite?
 --------------
 JSite is a tool for uploading websites. It handles keys and manages uploading files.
 
-To install jSite, click on the “jSite” widget from the Hyphanet’s main page [#]_ under the “Freenet related software” section. You will be redirected to the jSite freesite, where you can get the download link to the standalone application (select the binary file, not the sources). In the Hyphanet file downloader page, click on the “Download” button at the bottom to download the file in the download folder of the Hyphanet installation directory. Hyphanet will warn you that it may be insecure to download the file, but we will ignore the message as we are getting the file from the official website.
+To install jSite, click on the **jSite** widget from the Hyphanet’s main page [#]_ under the **Freenet related software** section. You will be redirected to the jSite freesite, where you can get the download link to the standalone application (select the binary file, not the sources). In the Hyphanet file downloader page, click the **Download** button at the bottom to download the file in the download folder of the Hyphanet installation directory. Hyphanet will warn you that it may be insecure to download the file, but we will ignore the message as we are getting the file from the official website.
 
 Using JSite
 -----------
@@ -605,7 +605,7 @@ Once jSite is downloaded, move the jar file to where it makes sense on your disk
 
    $ java -jar jSite-17-jSite-0.14-jar-with-dependencies.jar
 
-It will start the jSite project wizard. Let’s begin by adding a new project. Press the “Add project” button. It will automatically generate keys and a URI that you should not change. All you need to do is give your project a name and a description and tell jSite where your project is located on the disk.
+It will start the jSite project wizard. Let’s begin by adding a new project. Press the **Add project** button. It will automatically generate keys and a URI that you should not change. All you need to do is give your project a name and a description and tell jSite where your project is located on the disk.
  
 .. figure:: images/image134.png
    :width: 800
@@ -614,7 +614,7 @@ It will start the jSite project wizard. Let’s begin by adding a new project. P
 
    Project creation in jSite (1/2).
 
-Click on “Next”. The next screen will show a list of files contained in the path you mentioned in the previous screen. Select your ``index.html`` file and check the box “Default file.” Then, click on the “Insert now” button.
+Click **Next**. The next screen will show a list of files contained in the path you mentioned in the previous screen. Select your ``index.html`` file and check the box **Default file**. Then, click the **Insert now** button.
  
 .. figure:: images/image135.png
    :width: 800
@@ -623,7 +623,7 @@ Click on “Next”. The next screen will show a list of files contained in the 
 
    Project creation in jSite (2/2).
 
-After you have pressed “Insert now,” your freesite will be inserted on Hyphanet. Depending on the number of files and their size, it can take a while, so be patient and wait until a confirmation popup appears.
+After you have pressed **Insert now**, your freesite will be inserted on Hyphanet. Depending on the number of files and their size, it can take a while, so be patient and wait until a confirmation popup appears.
  
 .. figure:: images/image136.png
    :width: 800
@@ -632,16 +632,16 @@ After you have pressed “Insert now,” your freesite will be inserted on Hypha
 
    Project being published in jSite.
 
-When the site is successfully inserted, you can access the “Copy URI to Clipboard” button. To browse your new freesite, prepend the URI previously copied with “http://127.0.0.1:8888/” and enjoy your new freesite.
+When the site is successfully inserted, you can access the **Copy URI to Clipboard** button. To browse your new freesite, prepend the URI previously copied with http://127.0.0.1:8888/ and enjoy your new freesite.
 
 .. note::
 
-   Remember to copy and save this URI somewhere safe, as there is no trivial way of recovering it from jSite. You can also bookmark your URI on the Hyphanet main page by editing the “My bookmarks” section.
+   Remember to copy and save this URI somewhere safe, as there is no trivial way of recovering it from jSite. You can also bookmark your URI on the Hyphanet main page by editing the **My bookmarks** section.
 
 Other Applications and Plugins
 ==============================
 
-- **FlogHelper** [#]_ is an easy-to-use tool for creating a blog on Hyphanet. It automatically uses WebOfTrust to announce your new flog, so it should appear on the freesite indexes.
+- **FlogHelper** [#]_ is an easy-to-use tool for creating a blog on Hyphanet. It automatically uses `WebOfTrust <#web-of-trust-wot>`_ to announce your new flog, so it should appear on the freesite indexes.
 - **Freereader** [#]_ is a tool to insert RSS and ATOM feeds as Freesites.
 - **Frimgur** [#]_ is a plugin that allows you to upload a bunch of images.
 - **Frost** includes support for convenient file sharing, but its design is inherently vulnerable to spam and denial of service attacks. Frost can be downloaded from the Frost home page on SourceForge [#]_, or from the Frost freesite within Hyphanet. The Hyphanet developers do not endorse it. Frost is written in Java and is a separate application from Hyphanet. FMS is considered a better option.
@@ -677,14 +677,14 @@ Insert Your Freesite
 The publication is called “Insertion” on Hyphanet. There are several options to insert a freesite on the Hyphanet darknet:
 
 - **jSite**: Standalone Java application. Detailed earlier in this chapter.
-- **FlogHelper**: Installs as a plugin. It is an easy-to-use tool for creating a blog on Hyphanet. Use WebOfTrust to announce your new flog automatically, so it should appear on the freesite indexes.
+- **FlogHelper**: Installs as a plugin. It is an easy-to-use tool for creating a blog on Hyphanet. Use `WebOfTrust <#web-of-trust-wot>`_ to announce your new flog automatically, so it should appear on the freesite indexes.
 - **Sharesite**: Installs as a plugin. It is a tool for publishing and updating single-page sites based on the ShareWiki plugin.
 
 Announce Your Freesite
 ======================
 Now that your freesite has been inserted, it's time to promote it in different places.
 
-A good idea is to post on FMS in the “site.announce” forum using the format below. Index spiders will index your post.
+A good idea is to post on FMS in the **site.announce** forum using the format below. Index spiders will index your post.
 
 .. code-block::
    
@@ -696,7 +696,7 @@ A good idea is to post on FMS in the “site.announce” forum using the format 
 
 .. note::
 
-   The “site.announce” forum is not visible by default. To add it to your forums in FMS, go to “Board Maintenance” and check the box “forum” for the “site.announce” forum, as shown below.
+   The **site.announce** forum is not visible by default. To add it to your forums in FMS, go to **Board Maintenance** and check the box **forum** for the **site.announce** forum, as shown below.
  
    .. figure:: images/image138.png
       :width: 800
@@ -709,7 +709,7 @@ Thoughts About Hyphanet
 ***********************
 From my own experience, I found Hyphanet relatively slow, which is probably the price to pay for good anonymity. Plugins and pages are slow to download, but this may depend on your connection and the bandwidth allocated to Hyphanet.
 
-Besides, I was not a big fan of the extensive captcha process required to create a WoT identity, which took me a day to complete. It’s quite a confusing process where you keep having captchas and don’t know when you must stop until you eventually see that the number of trusters increases, which is the sign that your identity is being announced on Hyphanet. The same applied to FMS, where I spent 2 days trying to make my posts visible on the “test” forum. I feel that this process could be improved.
+Besides, I was not a big fan of the extensive captcha process required to create a `WoT <#create-a-new-identity>`_ identity, which took me a day to complete. It’s quite a confusing process where you keep having captchas and don’t know when you must stop until you eventually see that the number of trusters increases, which is the sign that your identity is being announced on Hyphanet. The same applied to FMS, where I spent 2 days trying to make my posts visible on the **test** forum. I feel that this process could be improved.
 
 There seems to be no way to queue pages to download; a page stops downloading when the tab is closed. This may be a bit confusing for beginners.
 
