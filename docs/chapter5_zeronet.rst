@@ -15,7 +15,7 @@ ZeroNet doesn’t have anything to ensure anonymity, but the project has been de
 
 History of ZeroNet
 ==================
-ZeroNet was started in 2014 as a project by Tamas Kocsis, a Hungarian developer, who made the first release of ZeroNet in 2015. Until 2019, the project was regularly updated, but when Tor migrated to version 3, ZeroNet stopped working with Tor. In November of 2021, a developer named “geekless” ported the code to be compatible with the Onion v3 protocol. Still, unfortunately, this patch has never been implemented in the official repository of ZeroNet, and the author has since deleted his repository from GitHub, removing access to the patch.
+ZeroNet was started in 2014 as a project by Tamas Kocsis, a Hungarian developer, who made the first release of ZeroNet in 2015. Until 2019, the project was regularly updated, but when Tor migrated to `version 3 <chapter2_tor.html#version>`_, ZeroNet stopped working with Tor. In November of 2021, a developer named “geekless” ported the code to be compatible with the Onion v3 protocol. Still, unfortunately, this patch has never been implemented in the official repository of ZeroNet, and the author has since deleted his repository from GitHub, removing access to the patch.
 
 Since 2019, the development of ZeroNet has almost stopped (see release dates in the figure below), and the project has been forked several times (ZeroNetX [#]_, ZeroNet-enhanced, zeronet-conservancy [#]_, ZeroNet by TwinLizzie). Most of these forked projects have been abandoned, and the only one that remains active seems to be ZeroNetX, maintained by a developer named “Pramukesh (canewsin) [#]_,” who is willing to rewrite ZeroNet using the Rust programming language instead of Python.
  
@@ -35,12 +35,12 @@ How Does ZeroNet Work?
 
    File transfer on ZeroNet.
 
-1.	Host “A” asks the BitTorrent Tracker to provide some IP addresses (“peers”) that are known to host a requested resource (this group of hosts is called a “swarm”). In ZeroNet, connecting to http://127.0.0.1:43110/Stats will reveal the list of trackers.
-2.	The BitTorrent Tracker answers with a list of IP addresses (“B,” “C,” “D,” and “E”) and adds host “A” as potential provider for the requested resource.
-3.	Host “A” simultaneously asks “B,” “C,” “D,” and “E” to deliver the ``content.json`` file for the given resource.
+1.	Host **A** asks the BitTorrent Tracker to provide some IP addresses (“peers”) that are known to host a requested resource (this group of hosts is called a “swarm”). In ZeroNet, connecting to http://127.0.0.1:43110/Stats will reveal the list of trackers.
+2.	The BitTorrent Tracker answers with a list of IP addresses (**B**, **C**, **D**, and **E**) and adds host **A** as potential provider for the requested resource.
+3.	Host **A** simultaneously asks **B**, **C**, **D**, and **E** to deliver the ``content.json`` file for the given resource.
 4.	All requested hosts have the file (not necessarily complete, but parts of it) and simultaneously send parts of ``content.json``, which holds all other file names, hashes, and the site owner’s cryptographic signature. These parallel downloads of parts of the requested file speed up the transfer.
-5.	The downloaded ``content.json`` file is verified using the site’s address and the site owner’s signature from the file. Host “A” now goes through the ``content.json`` file and recursively asks the same “seeders” to provide the files (HTML, CSS, JS, etc.).
-6.	Requested files are sent to “A,” which, in turn, becomes a provider for the files. Files are verified using the SHA512 hash from the ``content.json`` file.
+5.	The downloaded ``content.json`` file is verified using the site’s address and the site owner’s signature from the file. Host **A** now goes through the ``content.json`` file and recursively asks the same “seeders” to provide the files (HTML, CSS, JS, etc.).
+6.	Requested files are sent to **A**, which, in turn, becomes a provider for the files. Files are verified using the SHA512 hash from the ``content.json`` file.
 
 If the site owner (who has the private key for the site address) modifies the site, they sign the new ``content.json`` and publish it to their peers. Afterward, the peers verify the ``content.json`` integrity (using the signature), download the modified files, and publish the new content to other peers.
 
@@ -75,7 +75,7 @@ ZeroNet Forks
 =============
 ZeroNetX
 --------
-Alternatively, you can install ZeroNetX, a fork of ZeroNet developed and maintained by “Pramukesh (canewsin)”. It natively supports Tor v3 and several identity providers in addition to ZeroID. The increasing number of users migrating from ZeroNet to ZeroNetX makes it an interesting alternative to ZeroNet.
+Alternatively, you can install ZeroNetX, a fork of ZeroNet developed and maintained by “Pramukesh (canewsin)”. It natively supports Tor v3 and several identity providers in addition to `ZeroID <#id20>`_. The increasing number of users migrating from ZeroNet to ZeroNetX makes it an interesting alternative to ZeroNet.
 
 To install ZeroNetX, issue the below commands:
 
@@ -105,9 +105,7 @@ If this method fails, you can also use the ZeroNetX Updater. To do that, make su
 
 	$ ./ZeroNet.sh --updatesite 1Update8crprmciJHwp2WXqkx2c4iYp18
 
-Once ZeroNet is started, browse the following URL:
-
-	http://127.0.0.1:43110/1Update8crprmciJHwp2WXqkx2c4iYp18/
+Once ZeroNet is started, browse the following URL: http://127.0.0.1:43110/1Update8crprmciJHwp2WXqkx2c4iYp18/
 
 It will inform you that an update is available, as shown in the below screenshot.
  
@@ -118,7 +116,7 @@ It will inform you that an update is available, as shown in the below screenshot
 
    ZeroNetX Updater.
 
-Click the “Update to latest version” button and restart ZeroNet when requested. If the upgrade worked, your applications should now update automatically, and you should have new entries in your menu (e.g., “Name.YO,” “ZeroSitesX,” and “ZeroMailX”).
+Click the **Update to latest version** button and restart ZeroNet when requested. If the upgrade worked, your applications should now update automatically, and you should have new entries in your menu (e.g., **Name.YO**, **ZeroSitesX**, and **ZeroMailX**).
  
 .. figure:: images/image146.png
    :width: 400
@@ -127,7 +125,7 @@ Click the “Update to latest version” button and restart ZeroNet when request
 
    ZeroNetX Updater updating ZeroNet.
 
-One significant advantage is that applications shipped with ZeroNetX support several identity providers. For example, clicking the “Select Username” button in ZeroMailX shows a list of five identity providers. On the other hand, ZeroMail (shipped with ZeroNet) only natively supports “zeroid.bit.”
+One significant advantage is that applications shipped with ZeroNetX support several identity providers. For example, clicking the **Select Username** button in ZeroMailX shows a list of five identity providers. On the other hand, `ZeroMail <#id24>`_ (shipped with ZeroNet) only natively supports “zeroid.bit.”
  
 .. figure:: images/image147.png
    :width: 800
@@ -156,7 +154,7 @@ Other forks exist but they are not detailed in this book:
 
 How to Use ZeroNet with Tor?
 ============================
-If you want to hide your IP address (recommended), use ZeroNet with Tor and enable the “Tor always mode” in ZeroNet.
+If you want to hide your IP address (recommended), use ZeroNet with Tor and enable the **Tor always mode** in ZeroNet.
 
 .. note::
 
@@ -164,12 +162,13 @@ If you want to hide your IP address (recommended), use ZeroNet with Tor and enab
 
 Tor as a Service
 ----------------
-If you plan to use Tor over ZeroNet without the Tor Browser, first install Tor as a service, as explained in the chapter about Tor.
+If you plan to use Tor over ZeroNet without the Tor Browser, first `install Tor <chapter2_tor.html#packages>`_ as a service, as explained in the chapter about Tor.
 
 Then, edit the ``/etc/tor/torrc`` configuration file and uncomment the following lines:
 
 .. code-block::
-
+	:caption: ``/etc/tor/torrc`` (extract)
+	
 	ControlPort 9051
 	CookieAuthentication 1
 
@@ -185,7 +184,7 @@ Grant your user permission to read the ``/var/run/tor/control.authcookie`` file.
 
 	$ sudo usermod -a -G `stat -c "%U" /var/run/tor/control.authcookie` [yourlinuxuser]
 
-Log out and log in with your user to apply group changes and start ZeroNet. Remember to enable the “Always Tor mode.”
+Log out and log in with your user to apply group changes and start ZeroNet. Remember to enable the **Always Tor mode**.
  
 .. figure:: images/image149.png
 	:width: 800
@@ -197,7 +196,7 @@ Log out and log in with your user to apply group changes and start ZeroNet. Reme
 Tor Browser
 -----------
 To be able to browse ZeroNet sites within the Tor Browser, you’ll need to do a couple of things.
-First, download the Tor browser and start it. You’ll need to tune it so that it ignores our ZeroNet proxy address. To do that, enter ``about:config`` in the URL bar and ignore the warning by clicking the “I accept the risk” button. Now, search for the ``network.proxy.no_proxies_on`` parameter and set the value to ``127.0.0.1:43110``.
+First, download the Tor browser and start it. You’ll need to tune it so that it ignores our ZeroNet proxy address. To do that, enter ``about:config`` in the URL bar and ignore the warning by clicking the **I accept the risk** button. Now, search for the ``network.proxy.no_proxies_on`` parameter and set the value to ``127.0.0.1:43110``.
  
 .. figure:: images/image150.png
 	:width: 800
@@ -209,12 +208,13 @@ First, download the Tor browser and start it. You’ll need to tune it so that i
 Append these two lines in the global section of the ``zeronet.conf`` file. This will instruct ZeroNet to use the Tor Browser’s Tor ports instead of the ones used by the Tor service (default values).
 
 .. code-block::
-
+	:caption: ``zeronet.conf`` (extract)
+	
 	tor_controller = 127.0.0.1:9151
 	tor_proxy = 127.0.0.1:9150
 	open_browser = ""
 
-Now, start ZeroNet and point your Tor browser to http://127.0.0.1:43110. Enable the “Always Tor mode” option in ZeroNet.
+Now, start ZeroNet and point your Tor browser to http://127.0.0.1:43110. Enable the **Always Tor mode** option in ZeroNet.
 
 Open Proxies
 ============
