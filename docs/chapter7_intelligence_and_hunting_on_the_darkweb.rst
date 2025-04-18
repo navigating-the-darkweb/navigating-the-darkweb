@@ -108,13 +108,14 @@ The following commands show how to install TorBot.
 	$ cd TorBot/
 	$ python3 -m venv torbot_venv
 	$ source torbot_venv/bin/activate
-	$ pip install -r requirements.txt
+	(torbot_venv) $ pip install -r requirements.txt
+	(torbot_venv) $ pip install -e .
 
-At this stage, I had to manually install the ``httpx`` package (``pip install httpx``) and remove it from the ``requirements.txt`` file because of an error message while running the above command.
+Once done, check that you have no errors while running the below command:
 
 .. code-block:: bash
 
-	$ pip install -e .
+	(torbot_venv) $ ./main.py --help
 
 Below is an output example of TorBot:
  

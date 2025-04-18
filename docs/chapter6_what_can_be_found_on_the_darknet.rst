@@ -152,7 +152,7 @@ On I2P, you must create an IRC tunnel before connecting to an IRC server. Such a
 
 	I2PRouter runs an IRC service natively.
 
-By clicking on the gear icon on the left of “Irc2P”, it is possible to change the local port, as well as the list of servers and remote ports, as shown below:
+By clicking on the **gear** icon on the left of **Irc2P**, it is possible to change the local port, as well as the list of servers and remote ports, as shown below:
  
 .. figure:: images/image180.png
 	:width: 800
@@ -430,7 +430,7 @@ Some developers prefer to share their developments on the Dark Web, where you ca
 
 Games
 =====
-Online games, from old games to gambling websites, are available on almost all darknets. However, don’t expect advanced online games that rely on low latency. Anonymity networks are instead synonyms of high latency, which makes these online games incompatible.
+Online and offline games, from old games to gambling websites, are available on almost all darknets. However, don’t expect advanced online games that rely on low latency. Anonymity networks are instead synonyms of high latency, which makes these online games incompatible.
  
 .. figure:: images/image213.png
 	:width: 800
@@ -455,10 +455,10 @@ Online games, from old games to gambling websites, are available on almost all d
  
 .. figure:: images/image216.png
 	:width: 800
-	:alt: Zero-8 is a Zite (ZeroNet) where you can play many online games
+	:alt: Zero-8 is a Zite (ZeroNet) where you can play many games online
 	:class: with-border
 
-	Zero-8 is a Zite (ZeroNet) where you can play many online games.
+	Zero-8 is a Zite (ZeroNet) where you can play many games online.
 
 Paste Services
 **************

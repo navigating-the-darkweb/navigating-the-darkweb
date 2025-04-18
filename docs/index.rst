@@ -68,7 +68,12 @@ In this book, we use specific text formatting to indicate different types of act
        .. code-block:: bash
 
             $ sudo apt update && sudo apt install tor
-   * - Code to copy and modify
+   * - Command to execute from a python virtual environment
+     - 
+       .. code-block:: bash
+
+            (venv) $ pip install -r requirements.txt
+   * - Code to adapt to your environment
      - Add ``127.0.0.1`` in the ``/etc/apache2/ports.conf`` file as shown below:
 
        .. code-block::
@@ -97,7 +102,12 @@ There’s no pressure — your presence here already means a lot. But if you cho
 
 Thank you for reading, and for being part of this journey.
 
-`Donate via Paypal <https://www.paypal.com/donate/?hosted_button_id=WFXYUYZK2Y7DA>`_.
+.. image:: images/donate.png
+	:target: https://www.paypal.com/donate?hosted_button_id=73UNLMZ6CC8C6
+	:alt: support the author
+	:width: 300
+
+-----
 
 .. toctree::
    :maxdepth: 4

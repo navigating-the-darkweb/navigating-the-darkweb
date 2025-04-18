@@ -233,7 +233,7 @@ This section introduces some basic concepts of ZeroNet and examples of sites cal
 
 ZeroHello
 =========
-When you start ZeroNet, it will open “ZeroHello”, the homepage and site manager for ZeroNet.
+When you start ZeroNet, it will open **ZeroHello**, the homepage and site manager for ZeroNet.
  
 .. figure:: images/image151.png
 	:width: 800
@@ -244,7 +244,7 @@ When you start ZeroNet, it will open “ZeroHello”, the homepage and site mana
 
 .. note::
 
-	On ZeroNetX, the home page is called “Dashboard” instead of “ZeroHello,” but it has a similar look, as shown in the screenshot below.
+	On ZeroNetX, the home page is called **Dashboard** instead of **ZeroHello**, but it has a similar look, as shown in the screenshot below.
  
 	.. figure:: images/image152.png
 		:width: 800
@@ -253,7 +253,7 @@ When you start ZeroNet, it will open “ZeroHello”, the homepage and site mana
 
 		"Dashboard," the home page in ZeroNetX.
 
-You can access configuration options by clicking on the three dots on the right side of the ZeroNet logo (update all sites, configure ZeroNet, change the theme, mute users or sites, create a new site, etc.).
+You can access configuration options by clicking the **three dots** on the right side of the **ZeroNet** logo (update all sites, configure ZeroNet, change the theme, mute users or sites, create a new site, etc.).
 
 .. figure:: images/image153.png
 	:width: 400
@@ -262,7 +262,7 @@ You can access configuration options by clicking on the three dots on the right 
 
 	ZeroNet options menu in ZeroHello.
 
-The default view (the “sites” tab) shows a list of sites you have visited and are now sharing with others. Moving your mouse over a site title will reveal a three-dot icon on the right side of the title. The figure below shows the options available from the menu.
+The default view (the **sites** tab) shows a list of sites you have visited and are now sharing with others. Moving your mouse over a site title will reveal a **three-dot** icon on the right side of the title. The figure below shows the options available from the menu.
  
 .. figure:: images/image154.png
 	:width: 400
@@ -271,7 +271,7 @@ The default view (the “sites” tab) shows a list of sites you have visited an
 
 	Contextual menu for visited sites in ZeroHello.
 
-Each time you visit a new site, it will be added to your ZeroHello list of sites, which you will share with other visitors. ZeroHello will also update sites you have already visited. The bell icon at the right of the site name indicates that some files must be updated.
+Each time you visit a new site, it will be added to your ZeroHello list of sites, which you will share with other visitors. ZeroHello will also update sites you have already visited. The **bell** icon at the right of the site name indicates that some files must be updated.
  
 .. figure:: images/image155.png
 	:width: 400
@@ -331,7 +331,7 @@ Below is a list of some search engines in alphabetic order:
 
 ZeroID
 ======
-ZeroID is a key application since it is the leading identity provider in ZeroNet, and many applications rely on it. For this reason, it is essential that you first create an identity. Register a new identity by clicking on the “Register” button from any application requiring identification or directly with this address:  http://127.0.0.1:43110/zeroid.bit.
+ZeroID is a key application since it is the leading identity provider in ZeroNet, and many applications rely on it. For this reason, it is essential that you first create an identity. Register a new identity by clicking on the **Register** button from any application requiring identification or directly with this address:  http://127.0.0.1:43110/zeroid.bit.
  
 .. figure:: images/image160.png
 	:width: 800
@@ -340,7 +340,7 @@ ZeroID is a key application since it is the leading identity provider in ZeroNet
 
 	The ZeroID site in ZeroNet.
 
-When prompted, click the “Get auth cert” button and enter a username. An automatic control will let you know if this username has already been taken. Your request will be approved soon, so stay on the page until you receive a confirmation after you send it.
+When prompted, click the **Get auth cert** button and enter a username. An automatic control will let you know if this username has already been taken. Your request will be approved soon, so stay on the page until you receive a confirmation after you send it.
 
 The service is often overwhelmed, so it may be a bit of a struggle to get an identity. You will likely get an error message (“Error while during request: Forbidden. Please try again later”). If this happens, wait a few hours and try again until it eventually works.
 
@@ -352,10 +352,10 @@ Once you have a new identity, make a backup of it (it’s in the ``./data/users.
 
 ZeroBlog
 ========
-ZeroBlog [#]_ is a self-publishing demo blog that allows you to build and publish your blog on ZeroNet by simply cloning the application. To create your blog, install ZeroBlog, click the three dots icon on the right side of the application name, and click the “Clone” option.
+ZeroBlog [#]_ is a self-publishing demo blog that allows you to build and publish your blog on ZeroNet by simply cloning the application. To create your blog, install ZeroBlog, click the three dots icon on the right side of the application name, and click the **Clone** option.
  
 .. figure:: images/image161.png
-	:width: 300
+	:width: 350
 	:alt: To create a blog in ZeroNet, clone the ZeroBlog application
 	:class: with-border
 
@@ -384,7 +384,7 @@ The main files and directories are described below:
 - You can remove the ``data-default`` directory, as it only serves as a template for the ``data`` directory.
 - All posts and comments are saved to the ``data/data.json`` file and in the ``zeroblog.db`` SQLite database. The ``data/users/content.json`` file contains the list of identity providers and user permissions.
 
-When the blog’s content changes, it needs to be signed and published, which can be done by clicking the “Sign and publish” button, as shown below.
+When the blog’s content changes, it needs to be signed and published, which can be done by clicking the **Sign and publish** button, as shown below.
  
 .. figure:: images/image164.png
 	:width: 800
@@ -410,13 +410,13 @@ ZeroTalk is a decentralized P2P demo forum you can easily clone to make your for
 
 .. note::
 
-	In ZeroNetX, the equivalent application is named ThreadIt
+	In ZeroNetX, the equivalent application is named “ThreadIt.”
 
 ZeroMail
 ========
 ZeroMail is an end-to-end encrypted, distributed P2P messaging site.
 
-When you first visit the site, it adds your public key to your data file. At that point, anyone can send you a message. ZeroMail downloads messages from all users, but you can only decrypt your messages.
+When you first visit the site, it adds your public key to your ``data`` file. At that point, anyone can send you a message. ZeroMail downloads messages from all users, but you can only decrypt your messages.
  
 .. figure:: images/image166.png
 	:width: 800
@@ -463,7 +463,7 @@ Build a Static Zite
 -------------------
 You should start by creating a static site, as it requires less knowledge than creating a dynamic one.
 
-To create a new site from scratch, click on the three dots at the right of the ZeroNet icon and select "Create new, empty site" from the menu.
+To create a new site from scratch, click the **three dots** at the right of the ZeroNet icon and select **Create new, empty site** from the menu.
  
 .. figure:: images/image169.png
 	:width: 350
@@ -481,7 +481,7 @@ ZeroNet will redirect you to an address that it has created, as shown below.
 
 	The empty site created in ZeroNet.
 
-You can find and modify your site’s content in the data/[yourpageaddress] directory, automatically created by ZeroNet, where you will find the following structure:
+You can find and modify your site’s content in the ``data/[yourpageaddress]`` directory, automatically created by ZeroNet, where you will find the following structure:
 
 .. code-block::
 
@@ -497,7 +497,7 @@ Building a Dynamic Zite
 -----------------------
 There are no servers on ZeroNet, so sites don’t rely on languages like PHP, Python, or Ruby. Instead, one can create dynamic content using ZeroNet’s API (called “ZeroFrame”), JavaScript (or “CoffeeScript”), and an SQLite database.
 
-You can either clone an existing site (e.g., ZeroBlog) or create an empty site.
+You can either clone an existing site (e.g., `ZeroBlog <#zeroblog>`_) or create an empty site.
 
 Building a dynamic zite is complex, but helpful resources and examples are available on ZeroNet. For example, you could start by reading the following documentation.
 
@@ -506,7 +506,7 @@ Building a dynamic zite is complex, but helpful resources and examples are avail
 
 Publish Your Zite
 =================
-Before you publish your zite, make sure you have a port open [#]_. To be sure what port number should be open, connect to http://127.0.0.1:43110/Config and use or modify the port associated to the “File server port” parameter.
+Before you publish your zite, make sure you have a port open [#]_. To be sure what port number should be open, connect to http://127.0.0.1:43110/Config and use or modify the port associated to the **File server port** parameter.
  
 .. figure:: images/image171.png
 	:width: 800
@@ -515,7 +515,7 @@ Before you publish your zite, make sure you have a port open [#]_. To be sure wh
 
 	Port status in ZeroNetX.
 
-Once you are ready to publish your zite, open it in ZeroNet, drag the top right “0” button to the left, modify the site title and description, and press the “Sign and publish” button.
+Once you are ready to publish your zite, open it in ZeroNet, drag the top right **Ø** button to the left, modify the site title and description, and press the **Sign and publish** button.
  
 .. figure:: images/image172.png
 	:width: 800
@@ -543,7 +543,9 @@ The best way to make your zite visible to other users is to announce it to direc
 
 Thoughts about ZeroNet
 **********************
-Because of its design, ZeroNet can quickly require a significant amount of disk space, as the sites you’re visiting are cached locally to be served for others who are also visiting the sites. Unlike Hyphanet, where only blocks of data are copied, ZeroNet makes an entire copy of the sites you’re visiting, which may involve complete databases or files owned by other users.
+Because of its design, ZeroNet can quickly require a significant amount of disk space, as the sites you’re visiting are cached locally to be served for others who are also visiting the sites.
+
+Unlike Hyphanet, where only blocks of data are copied, ZeroNet makes an entire copy of the sites you’re visiting, which may involve complete databases or files owned by other users.
  
 .. figure:: images/image174.png
 	:width: 800
@@ -552,9 +554,9 @@ Because of its design, ZeroNet can quickly require a significant amount of disk 
 
 	The SQLite database of ZeroBlog can be read from the cache.
 
-ZeroNet heavily relies on ZeroID as an identity provider. Still, the site is often overwhelmed and refuses to provide any new identity, pretending the username already exists, or because of too many requests from the same IP address in a short period. Several other identity providers (e.g., CryptoID, KaffieID) exist, but only a few services on ZeroNet support them, and you will need to add them as trusted providers manually. ZeroNetX, on the other hand, addresses this issue and proposes several forked copies of the services (ZeroSiteX, ZeroMailX, ZeroTalk++, etc.) that natively support these alternate identity providers. Because it’s almost impossible to create a new identity on the legacy ZeroNet identity provider (ZeroID), most users will likely migrate to forked versions of ZeroNet (e.g., ZeroNetX).
+ZeroNet heavily relies on `ZeroID <#id20>`_ as an identity provider. Still, the site is often overwhelmed and refuses to provide any new identity, pretending the username already exists, or because of too many requests from the same IP address in a short period. Several other identity providers (e.g., CryptoID, KaffieID) exist, but only a few services on ZeroNet support them, and you will need to add them as trusted providers manually. `ZeroNetX <#zeronetx>`_, on the other hand, addresses this issue and proposes several forked copies of the services (ZeroSiteX, ZeroMailX, ZeroTalk++, etc.) that natively support these alternate identity providers. Because it’s almost impossible to create a new identity on the legacy ZeroNet identity provider (`ZeroID <#id20>`_), most users will likely migrate to forked versions of ZeroNet (e.g., `ZeroNetX <#zeronetx>`_).
 
-Anonymity is only supported when ZeroNet is used in conjunction with the Tor network, but the latest release of ZeroNet doesn’t support Tor v3. On the other hand, ZeroNet forks (including ZeroNetX) natively support Tor v3 and appear to be a much easier alternative.
+Anonymity is only supported when ZeroNet is used in conjunction with the Tor network, but the latest release of ZeroNet doesn’t support Tor v3. On the other hand, ZeroNet forks (including `ZeroNetX <#zeronetx>`_) natively support Tor v3 and appear to be a much easier alternative.
 
 ZeroNet seems to have fewer peers than Hyphanet, making it less reliable.
 
