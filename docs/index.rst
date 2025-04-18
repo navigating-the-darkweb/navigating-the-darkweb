@@ -8,7 +8,7 @@ Welcome
 
 What Is It?
 ***********
-"Navigating the Dark Web: A Comprehensive Guide to Darknets, Tools, and Intelligence" is an online book written by Sébastien Damaye. It is exlusively hosted online so that everybody can enjoy it for free, but you are very welcome to `support the author <#id1>`_.
+"Navigating the Dark Web: A Comprehensive Guide to Darknets, Tools, and Intelligence" is an online book written by Sébastien Damaye. It is exclusively hosted online so that everybody can enjoy it for free, but you are very welcome to `support the author <#id1>`_.
 
 This book explains what the Dark Web is, how to access it, what content to expect, how to monitor the Dark Web and why it matters. I wrote this book to address many questions people have, to demystify the Dark Web, and share my experience with others.
 
