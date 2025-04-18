@@ -139,7 +139,7 @@ For example, you can run the below command to extract links on a page.
 	## Step 1 completed with: 42 result(s)
 	## File created on /data/TorCrawl.py/output/dark.fail/241114_links.txt
 
-Links are saved in the output directory.
+Links are saved in the ``output`` directory.
 
 .. code-block:: bash
 
@@ -212,6 +212,11 @@ Update some outdated Python dependencies to avoid build errors:
 
 	(vigilantonion) $ sed -i "s/beautifulsoup/beautifulsoup4/" requirements.txt
 	(vigilantonion) $ sed -i "s/PyYAML==5.4/PyYAML/" requirements.txt
+
+Now, proceed with the installation:
+
+.. code-block:: bash
+
 	(vigilantonion) $ pip install -U pip
 	(vigilantonion) $ pip install -r requirements.txt
 	(vigilantonion) $ pip install pysocks
@@ -227,6 +232,7 @@ VigilantOnion should now be installed. You can check that it runs without errors
 Now, you’ll need to install your own data lake (Splunk or Elasticsearch) and configure VigilantOnion to send the syslog logs to it. We’ll assume we have a Splunk server installed on ``192.168.1.94`` and configured a listening port running on port ``515/udp``. This can be applied as follows in the configuration file (``./config/config.yml``):
 
 .. code-block::
+	:caption: ``./config/config.yml`` (extract)
 
 	sendlog: True
 	logport: 515
@@ -325,7 +331,7 @@ Now, set environment variables:
 	EOF
 	$ . ~/.bashrc
 
-The below command will download ``onionscan`` to the ``~/go`` directory.
+The below command will download OnionScan to the ``~/go`` directory.
 
 .. code-block:: bash
 
@@ -398,13 +404,15 @@ The below commands show how to install OnionIngestor in a virtual environment:
 	(onioningestor) $ pip install -U pip
 	(onioningestor) $ pip install -r requirements/prod.txt
 
-At this stage, the latest command failed because of missing dependencies. I solved the issue by installing the latest LXML package, removing it from the requirements, and rerunning the installation command:
+.. note::
 
-.. code-block:: bash
+	At this stage, the latest command failed because of missing dependencies. I solved the issue by installing the latest LXML package, removing it from the requirements, and rerunning the installation command:
 
-	(onioningestor) $ pip install lxml
-	(onioningestor) $ sed -i "s/^lxml/#lxml/" requirements/prod.txt
-	(onioningestor) $ pip install -r requirements/prod.txt
+	.. code-block:: bash
+
+		(onioningestor) $ pip install lxml
+		(onioningestor) $ sed -i "s/^lxml/#lxml/" requirements/prod.txt
+		(onioningestor) $ pip install -r requirements/prod.txt
 
 And now, install OnionIngestor:
 
@@ -421,6 +429,7 @@ Check that you have no errors with the below command.
 The connection string for Elasticsearch did not work for me, and I had to modify the ``onioningestor/databases/elasticsearch.py`` module. The old connection string is commented out, and the new connection string is below. Note that the authentication to the Elasticsearch server relies on an API key, which you’ll need to generate on the server [#]_.
 
 .. code-block:: python
+	:caption: ``onioningestor/databases/elasticsearch.py`` (extract)
 
 	#self.es = Elasticsearch([{
 	#    'host':self.config['host'],
@@ -433,7 +442,8 @@ The connection string for Elasticsearch did not work for me, and I had to modify
 
 Now, configure the configuration file (``onioningestor.yml``). Below is the configuration file that has been used for the screenshots. Some operators were disabled on purpose because they prevented OnionIngestor from working correctly.
 
-.. code-block::
+.. code-block:: yaml
+	:caption: ``onioningestor.yml``
 
 	# This is an example ThreatIngestor config file with some preconfigured RSS
 	# sources, feeding extracted artifacts into a CSV file.
@@ -781,6 +791,7 @@ Now, let’s create a Python virtual environment (created by default in ``~/mini
 Now edit ``crawler/database/connection_settings.py`` and set the correct database connection and proxy settings. The configuration file used for the tests is shown below.
 
 .. code-block::
+	:caption: ``crawler/database/connection_settings.py``
 
 	PROVIDER = 'mysql'
 	HOST = 'localhost'
@@ -852,7 +863,7 @@ We are now ready to start the crawling process (we will assume that I2P is alrea
 	
 		(c4darknet) $ pip install Twisted==22.10.0
 
-Below is an extract of my “darknetcrawler.log” file at runtime. It shows the current URL being parsed, the number of ongoing threads, the finished ones, the ones with errors, the ones being discovered, etc.
+Below is an extract of my ``darknetcrawler.log`` file at runtime. It shows the current URL being parsed, the number of ongoing threads, the finished ones, the ones with errors, the ones being discovered, etc.
 
 .. code-block:: bash
 

@@ -84,7 +84,7 @@ html_theme_options = {
         },
         {
             "name": "Donate",
-            "url": "https://www.paypal.com/donate/?hosted_button_id=WFXYUYZK2Y7DA",
+            "url": "https://www.paypal.com/donate?hosted_button_id=73UNLMZ6CC8C6",
             "icon": "fas fa-donate",
         },
     ],
