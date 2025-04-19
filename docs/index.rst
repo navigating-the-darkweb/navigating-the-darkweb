@@ -3,6 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. image:: images/bannerBackgroundImage.png
+
 Welcome
 =======
 
@@ -119,5 +121,5 @@ Thank you for reading, and for being part of this journey.
    chapter3_i2p
    chapter4_hyphanet
    chapter5_zeronet
-   chapter6_what_can_be_found_on_the_darknet
+   chapter6_what_can_be_found_on_the_darkweb
    chapter7_intelligence_and_hunting_on_the_darkweb
