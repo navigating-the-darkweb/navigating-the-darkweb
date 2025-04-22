@@ -5,6 +5,7 @@
 
 .. meta::
 	:google-site-verification: yAFBRXv6J0QsJeTI4nGlowCKX7m3dyaYFBMOmFHJN-I
+	:msvalidate.01: D8E7042FD25E42708394BDF2529FFFCF
 
 .. image:: images/bannerBackgroundImage.png
 
