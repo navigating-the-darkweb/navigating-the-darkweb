@@ -39,6 +39,8 @@ html_static_path = ['_static']
 html_css_files = ['custom.css']
 html_favicon = '_static/favicon.ico'
 
+html_title = 'Navigating the Dark Web'
+
 # Check sidebar documentation
 # https://sphinx-book-theme.readthedocs.io/en/stable/sections/sidebar-primary.html
 
