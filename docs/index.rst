@@ -3,6 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. meta::
+	:google-site-verification: yAFBRXv6J0QsJeTI4nGlowCKX7m3dyaYFBMOmFHJN-I
+
 .. image:: images/bannerBackgroundImage.png
 
 Welcome
