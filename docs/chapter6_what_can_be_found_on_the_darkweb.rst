@@ -1,3 +1,7 @@
+.. meta::
+	:description lang=en:
+		“Navigating the Dark Web: A Comprehensive Guide to Darknets, Tools, and Intelligence” is an online book written by Sébastien Damaye. Chapter 6: What cn be found on the Dark Web?
+
 Chapter 6: What can be found on the Dark Web?
 #############################################
 

@@ -1,3 +1,7 @@
+.. meta::
+	:description lang=en:
+		“Navigating the Dark Web: A Comprehensive Guide to Darknets, Tools, and Intelligence” is an online book written by Sébastien Damaye. Chapter 1: Overview of the Dark Web.
+
 Chapter 1: Overview of The Dark Web
 ###################################
 

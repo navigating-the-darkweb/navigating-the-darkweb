@@ -4,6 +4,8 @@
    contain the root `toctree` directive.
 
 .. meta::
+	:description lang=en:
+		“Navigating the Dark Web: A Comprehensive Guide to Darknets, Tools, and Intelligence” is an online book written by Sébastien Damaye. This book explains what the Dark Web is, how to access it, what content to expect, how to monitor the Dark Web and why it matters. I wrote this book to address many questions people have, to demystify the Dark Web, and share my experience with others.
 	:google-site-verification: yAFBRXv6J0QsJeTI4nGlowCKX7m3dyaYFBMOmFHJN-I
 	:msvalidate.01: D8E7042FD25E42708394BDF2529FFFCF
 
