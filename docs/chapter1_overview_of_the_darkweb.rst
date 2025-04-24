@@ -11,7 +11,7 @@ Surface Web, Deep Web, and Dark Web
 ***********************************
 Definitions
 ===========
-Before exploring the Dark Web’s concepts, it is crucial to understand its different layers. The Internet can be represented as an iceberg divided into three sections, as described below.
+Before exploring the Dark Web’s concepts, it is crucial to understand where it is within the Internet. The Internet can be represented as an iceberg divided into three sections, as described below.
 
 The **Surface Web** is the visible portion of the iceberg. It is readily available to the public and searchable with standard web search engines. It is also called the “Visible Web” or “Clearnet,” representing only 4% of the global Internet. Examples are google.com, wikipedia.org, youtube.com, and aldeid.com.
 
