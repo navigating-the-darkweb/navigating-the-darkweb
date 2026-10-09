@@ -106,7 +106,7 @@ Readers' Reviews
 ****************
 Tell me what you think of the book:
 
-`Leave a Review https://tally.so/r/yPWLgg`_
+`Leave a Review <https://tally.so/r/yPWLgg>`_
 
 Support the Author
 ******************
