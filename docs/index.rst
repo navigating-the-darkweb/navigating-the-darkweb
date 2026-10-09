@@ -102,6 +102,12 @@ In this book, we use specific text formatting to indicate different types of act
 
 	   16:72C351A6A2B3346260F62EACE3FF5C2D3FC283726E805141D1977B0C88
 
+Readers' Reviews
+****************
+Tell me what you think of the book:
+
+`Leave a Review https://tally.so/r/yPWLgg`_
+
 Support the Author
 ******************
 This book is free for everyone to enjoy — no paywalls, no subscriptions, just shared with love. If you’ve found value in it and would like to support my work, you’re welcome to leave a donation.
@@ -129,3 +135,4 @@ Thank you for reading, and for being part of this journey.
    chapter5_zeronet
    chapter6_what_can_be_found_on_the_darkweb
    chapter7_intelligence_and_hunting_on_the_darkweb
+   readers_reviews
