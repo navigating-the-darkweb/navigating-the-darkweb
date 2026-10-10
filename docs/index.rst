@@ -108,7 +108,7 @@ Readers' Reviews
 
 Based on 1 review
 
-★★★★★
+    ★★★★★
 
     *"Your work was one of the references that helped shape our own scientific paper on the subject."*
 
