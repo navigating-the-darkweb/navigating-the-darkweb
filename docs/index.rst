@@ -105,11 +105,14 @@ In this book, we use specific text formatting to indicate different types of act
 Readers' Reviews
 ****************
 ⭐⭐⭐⭐⭐ 5.0/5
+
 Based on 1 review
 
-⭐⭐⭐⭐⭐
+★★★★★
+
 *"Your work was one of the references that helped shape our own scientific paper on the subject."*
-— Founder & CEO risikomonitor.com gmbh
+
+ — Founder & CEO risikomonitor.com gmbh
 
 `[Read More Reviews] <readers_reviews.html>`_
 
