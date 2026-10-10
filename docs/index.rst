@@ -104,9 +104,16 @@ In this book, we use specific text formatting to indicate different types of act
 
 Readers' Reviews
 ****************
-Tell me what you think of the book:
+⭐⭐⭐⭐⭐ 5.0/5
+Based on 1 review
 
-`Leave a Review <https://tally.so/r/yPWLgg>`_
+⭐⭐⭐⭐⭐
+*"Your work was one of the references that helped shape our own scientific paper on the subject."*
+— Founder & CEO risikomonitor.com gmbh
+
+`[Read More Reviews] <readers_reviews.html>`_
+
+`[Leave a Review] <https://tally.so/r/yPWLgg>`_
 
 Support the Author
 ******************
