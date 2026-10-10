@@ -110,9 +110,9 @@ Based on 1 review
 
 ★★★★★
 
-*"Your work was one of the references that helped shape our own scientific paper on the subject."*
+    *"Your work was one of the references that helped shape our own scientific paper on the subject."*
 
- — Founder & CEO risikomonitor.com gmbh
+    — Founder & CEO risikomonitor.com gmbh
 
 `[Read More Reviews] <readers_reviews.html>`_
 
